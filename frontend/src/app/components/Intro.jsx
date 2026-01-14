@@ -1,379 +1,205 @@
-import { Check, Car, PoundSterling, Calendar, MapPin, Users, Shield, FileText } from 'lucide-react';
-import Image from 'next/image';
+import { TrendingUp, Users, Star, BarChart3, CreditCard, Send, Download, Zap, Shield, PieChart, Clock, CheckCircle } from 'lucide-react';
 
-const CareerPage = () => {
-  const coreValues = [
-    {
-      icon: <Car className="w-6 h-6" />,
-      title: "Free Company Vans",
-      description: "Modern automatic electric Mercedes Sprinter vans, fully maintained.",
-      highlight: "No lease or rental charges."
-    },
-    {
-      icon: <PoundSterling className="w-6 h-6" />,
-      title: "Clear Weekly Pay",
-      description: "Competitive daily rates paid weekly.",
-      highlight: "VAT-registered drivers can earn more, with guidance provided."
-    },
-    {
-      icon: <Calendar className="w-6 h-6" />,
-      title: "Flexible Working Days",
-      description: "Work up to 6 days per week.",
-      highlight: "Delivery routes typically start around midday and finish in the evening."
-    },
-    {
-      icon: <MapPin className="w-6 h-6" />,
-      title: "Consistent Routes",
-      description: "Year-round work with Amazon.",
-      highlight: "Most drivers remain within the same delivery areas."
-    },
-    {
-      icon: <Users className="w-6 h-6" />,
-      title: "Full Support",
-      description: "Help with self-employment setup, VAT registration, and invoicing.",
-      highlight: "So drivers can focus on delivering."
-    }
+const MonetaLandingPage = () => {
+  const stats = [
+    { icon: <Users className="w-5 h-5" />, value: "2500+", label: "Partners & Customers", color: "text-purple-600" },
+    { icon: <TrendingUp className="w-5 h-5" />, value: "$2.5M", label: "Invested in 2024", color: "text-emerald-600" },
+    { icon: <Star className="w-5 h-5" />, value: "5.0", label: "Customer Rating", color: "text-amber-600" },
+    { icon: <BarChart3 className="w-5 h-5" />, value: "205+", label: "Products", color: "text-blue-600" }
   ];
 
-  const requirements = [
-    "Minimum age: 21 years or older",
-    "Full UK or EU driving licence (held at least 1 year)",
-    "No more than 6 penalty points",
-    "Legal right to live and work in the UK",
-    "Comfortable working as self-employed"
+  const features = [
+    { icon: <Shield className="w-6 h-6" />, title: "Bank-Level Security", desc: "Enterprise-grade encryption for all transactions" },
+    { icon: <PieChart className="w-6 h-6" />, title: "Real-Time Analytics", desc: "Live financial insights and forecasting" },
+    { icon: <Clock className="w-6 h-6" />, title: "24/7 Support", desc: "Round-the-clock customer assistance" },
+    { icon: <CheckCircle className="w-6 h-6" />, title: "Automated Workflows", desc: "Streamline repetitive financial tasks" }
+  ];
+
+  const steps = [
+    { number: "1", title: "Sign Up & Customize", desc: "Create account in minutes, tailored to your business needs" },
+    { number: "2", title: "Integrate Your Data", desc: "Seamlessly connect with existing financial tools" },
+    { number: "3", title: "Manage Efficiently", desc: "Use intuitive dashboard for daily operations" }
   ];
 
   return (
-    <div className="">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
       
-      {/* 3. INTRODUCTION SECTION */}
-      <section className="w-full py-16 md:py-24  px-4 md:px-12 lg:px-24 xl:px-40 2xl:px-48 bg-linear-to-b from-white to-gray-50">
-       
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            
-            {/* Left Column - Text */}
-            <div>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                Logistics Done Right.
-                <br />
-                <span className="text-[#db2828]">Drivers Treated Better.</span>
-              </h2>
-              
-              <div className="space-y-6 text-lg text-gray-700">
-                <p>
-                  Welcome to <span className="font-semibold text-gray-900">Fleet X Logistics</span>, 
-                  an Amazon Delivery Service Partner based in Havant, Hampshire.
-                </p>
-                <p>
-                  We specialise in reliable last-mile parcel delivery while creating a professional, 
-                  supportive working environment for our drivers.
-                </p>
-                <p className="text-gray-600">
-                  We believe fair treatment, clear communication, and proper support lead to better results for everyone. 
-                  That's why we provide company-maintained electric vans, structured routes, and transparent onboarding from day one.
-                </p>
-                <p>
-                  Whether you're an experienced delivery driver or looking for a new opportunity, 
-                  <span className="font-semibold text-gray-900"> Fleet X Logistics</span> offers stability with flexibility.
-                </p>
-              </div>
+      {/* Hero Section */}
+      <section className="container mx-auto px-6 py-16 md:py-24">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div className="inline-flex items-center gap-2 bg-violet-50 text-violet-700 px-4 py-2 rounded-full mb-6">
+              <Star className="w-4 h-4" />
+              <span className="font-medium">Trusted by 1500+ companies</span>
             </div>
-
-      {/* Right Column - Images */}
-<div className="relative">
-  {/* Main Image */}
-  <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl">
-    <div className="absolute inset-0">
-      {/* Banner Image with overlay */}
-      <Image
-        src="/banner.webp"
-        alt="Fleet X Logistics delivery team with electric vans"
-        fill
-        className="object-cover"
-        sizes="(max-width: 768px) 100vw, 50vw"
-        priority
-      />
-      <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 via-white/20 to-transparent" />
-    </div>
-    
-    {/* Text Overlay */}
-    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-8">
-      <div className="text-white">
-        <h3 className="text-2xl font-bold mb-2">Modern Electric Fleet</h3>
-        <p className="text-white/90">Environmentally friendly delivery solutions</p>
-      </div>
-    </div>
-  </div>
-  
-  {/* Floating Stats Card */}
-  <div className="absolute -bottom-6 -right-6 bg-white rounded-xl p-6 shadow-xl border border-gray-200 w-64 z-10">
-    <div className="flex items-center gap-4">
-      <div className="bg-green-100 p-3 rounded-lg">
-        <Check className="w-6 h-6 text-green-600" />
-      </div>
-      <div>
-        <div className="text-2xl font-bold text-gray-900">40+</div>
-        <div className="text-gray-600 text-sm">Happy Drivers</div>
-      </div>
-    </div>
-  </div>
-
-  {/* Small Image Grid */}
-  <div className="flex gap-4 mt-8">
-    <div className="flex-1 h-32 rounded-xl overflow-hidden shadow-lg group relative">
-      <div className="absolute inset-0 bg-gradient-to-br from-[#db2828]/20 to-transparent" />
-      <div className="relative w-full h-full bg-gray-100 flex items-center justify-center">
-        <Users className="w-8 h-8 text-[#db2828]" />
-      </div>
-      <div className="absolute bottom-0 left-0 right-0 bg-black/70 p-3 text-center">
-        <p className="text-white text-xs font-medium">Team Support</p>
-      </div>
-    </div>
-    <div className="flex-1 h-32 rounded-xl overflow-hidden shadow-lg group relative">
-      <div className="absolute inset-0 bg-gradient-to-br from-[#db2828]/20 to-transparent" />
-      <div className="relative w-full h-full bg-blue-50 flex items-center justify-center">
-        <MapPin className="w-8 h-8 text-[#db2828]" />
-      </div>
-      <div className="absolute bottom-0 left-0 right-0 bg-black/70 p-3 text-center">
-        <p className="text-white text-xs font-medium">Local Routes</p>
-      </div>
-    </div>
-    <div className="flex-1 h-32 rounded-xl overflow-hidden shadow-lg group relative">
-      <div className="absolute inset-0 bg-gradient-to-br from-[#db2828]/20 to-transparent" />
-      <div className="relative w-full h-full bg-gray-100 flex items-center justify-center">
-        <Shield className="w-8 h-8 text-[#db2828]" />
-      </div>
-      <div className="absolute bottom-0 left-0 right-0 bg-black/70 p-3 text-center">
-        <p className="text-white text-xs font-medium">Safety First</p>
-      </div>
-    </div>
-  </div>
-</div>
-          </div>
-      
-      </section>
-
-      {/* 4. WHY JOIN US (CORE VALUE SECTION) */}
-      <section className="w-full py-16 md:py-24  px-4 md:px-12 lg:px-24 xl:px-40 2xl:px-48 bg-white">
-       
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Why Drive for Fleet X Logistics?
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We provide the tools you need to succeed — without hidden costs.
+            
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight mb-6">
+              Enhance finances with{' '}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-purple-600">
+                Moneta
+              </span>{' '}
+              tools
+            </h1>
+            
+            <p className="text-lg text-slate-600 mb-8">
+              Streamline your business's financial management with our intuitive, scalable SaaS platform. 
+              Designed for modern enterprises seeking precision and efficiency.
             </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4">
+              <button className="bg-gradient-to-r from-violet-600 to-purple-600 text-white px-8 py-3.5 rounded-full font-semibold flex items-center justify-center gap-2 hover:shadow-xl hover:shadow-violet-200 transition-all">
+                <Download className="w-5 h-5" />
+                Download App
+              </button>
+              <button className="border-2 border-slate-300 text-slate-700 px-8 py-3.5 rounded-full font-semibold hover:border-violet-400 hover:text-violet-700 transition-colors">
+                Start Free Trial
+              </button>
+            </div>
           </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {coreValues.map((value, index) => (
-              <div 
-                key={index}
-                className="bg-white rounded-2xl p-8 border border-gray-200 hover:border-blue-300 hover:shadow-xl transition-all duration-300 group"
-              >
-                <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-blue-50 text-[#db2828] mb-6 group-hover:bg-blue-100 transition-colors">
-                  {value.icon}
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  {value.title}
-                </h3>
-                <p className="text-gray-700 mb-3">
-                  {value.description}
-                </p>
-                <div className="inline-flex items-center gap-2 bg-green-50 text-green-700 px-4 py-2 rounded-lg">
-                  <Check className="w-4 h-4" />
-                  <span className="font-medium">{value.highlight}</span>
+          
+          {/* Dashboard Preview */}
+          <div className="relative">
+            <div className="relative bg-white rounded-3xl p-8 shadow-2xl border border-slate-200">
+              {/* User Profile */}
+              <div className="flex items-center gap-4 mb-8">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-r from-amber-400 to-orange-500" />
+                <div>
+                  <p className="text-sm text-slate-500">Hello,</p>
+                  <p className="font-bold text-slate-800">Ismu Adiyat</p>
                 </div>
               </div>
-            ))}
-          </div>
-        
-      </section>
-
-      {/* 5. DRIVER REQUIREMENTS (FILTER SECTION) */}
-      <section className="w-full py-16 md:py-24  px-4 md:px-12 lg:px-24 xl:px-40 2xl:px-48 bg-gray-50">
-     
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            
-            {/* Left Column - Text */}
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Who We Are Looking For
-              </h2>
               
-              <p className="text-lg text-gray-700 mb-8">
-                To meet safety and insurance requirements, applicants must meet the following criteria:
-              </p>
-
-              <div className="space-y-4 mb-8">
-                {requirements.map((requirement, index) => (
-                  <div key={index} className="flex items-start gap-3">
-                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mt-1">
-                      <Check className="w-4 h-4 text-[#db2828]" />
-                    </div>
-                    <span className="text-gray-700">{requirement}</span>
+              {/* Balance Card */}
+              <div className="bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl p-6 text-white mb-8">
+                <p className="text-slate-300 mb-2">Total Balance</p>
+                <p className="text-3xl font-bold mb-6">$5,502.45</p>
+                <div className="flex items-center gap-2">
+                  <div className="flex-1">
+                    <p className="text-sm text-slate-400">Income Analysis</p>
+                    <p className="text-lg font-semibold">$332,349</p>
                   </div>
+                  <div className="bg-violet-500/20 px-4 py-2 rounded-lg">
+                    <span className="text-violet-300 font-medium">VISA</span>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Quick Actions */}
+              <div className="grid grid-cols-4 gap-4 mb-8">
+                {[
+                  { icon: <CreditCard className="w-5 h-5" />, label: "Balance" },
+                  { icon: <Send className="w-5 h-5" />, label: "Transfer" },
+                  { icon: <Users className="w-5 h-5" />, label: "Request" },
+                  { icon: <Zap className="w-5 h-5" />, label: "Active" }
+                ].map((action, idx) => (
+                  <button key={idx} className="flex flex-col items-center gap-2 p-3 rounded-xl hover:bg-slate-50 transition-colors">
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-violet-100 to-purple-100 flex items-center justify-center text-violet-600">
+                      {action.icon}
+                    </div>
+                    <span className="text-sm font-medium text-slate-700">{action.label}</span>
+                  </button>
                 ))}
               </div>
-
-              <div className="bg-blue-50 rounded-xl p-6 border border-blue-200">
-                <div className="flex items-start gap-4">
-                  <FileText className="w-6 h-6 text-[#db2828] mt-1" />
-                  <div>
-                    <h4 className="font-bold text-gray-900 mb-2">No Experience Needed</h4>
-                    <p className="text-gray-700">
-                      No previous delivery experience required. Full training is provided.
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
-
-            {/* Right Column - Image */}
-            <div className="relative">
-              <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
-                <div className="absolute inset-0 bg-linear-to-br from-blue-50 to-white">
-                  {/* Replace with actual image */}
-                  <div className="absolute inset-0 bg-gray-200 flex items-center justify-center">
-                    <div className="text-center p-8">
-                      <Users className="w-24 h-24 text-[#db2828] mx-auto mb-6" />
-                      <h3 className="text-2xl font-bold text-gray-900 mb-3">Join Our Team</h3>
-                      <p className="text-gray-600">Professional drivers delivering excellence</p>
-                    </div>
-                  </div>
-                </div>
-                
-                {/* Floating Badge */}
-                <div className="absolute top-6 right-6 bg-white rounded-full px-6 py-3 shadow-lg">
-                  <span className="font-bold text-gray-900">Now Hiring</span>
-                </div>
-              </div>
-            </div>
-          </div>
-      
-      </section>
-
-      {/* 6. CALL TO ACTION BANNER */}
-      <section className="w-full py-16 md:py-24  px-4 md:px-12 lg:px-24 xl:px-40 2xl:px-48 bg-gradient-to-r from-[#db2828] to-blue-700">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-12 md:p-16 border border-white/20">
-            <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Ready to Start Delivering?
-            </h3>
             
-            <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
-              We are currently recruiting for our Havant depot. Positions are filled on a rolling basis.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <button className="px-12 py-4 bg-white text-[#db2828] font-bold text-lg rounded-xl hover:bg-blue-50 hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-3xl">
-                Start Your Application
-              </button>
-              
-              <div className="flex items-center gap-4 text-white">
-                <div className="h-px w-8 bg-white/50"></div>
-                <span className="text-blue-100">Or call us at</span>
-                <a href="tel:+441234567890" className="font-bold hover:text-blue-100">
-                  01234 567 890
-                </a>
-              </div>
-            </div>
-
-            <div className="mt-12 pt-8 border-t border-white/20">
-              <div className="flex flex-wrap justify-center gap-8 text-blue-100">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-white">£400+</div>
-                  <div className="text-sm">Average Weekly Earnings</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-white">24/7</div>
-                  <div className="text-sm">Driver Support</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-white">100%</div>
-                  <div className="text-sm">Equipment Provided</div>
-                </div>
-              </div>
+            {/* Floating Elements */}
+            <div className="absolute -top-4 -right-4 bg-gradient-to-r from-emerald-500 to-teal-500 text-white px-6 py-2.5 rounded-full font-bold shadow-lg">
+              Live Preview
             </div>
           </div>
         </div>
       </section>
+
+      {/* Stats Section */}
+      <section className="container mx-auto px-6 py-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          {stats.map((stat, idx) => (
+            <div key={idx} className="bg-white rounded-2xl p-6 border border-slate-200 hover:border-violet-300 transition-colors">
+              <div className={`${stat.color} mb-4`}>{stat.icon}</div>
+              <p className="text-2xl font-bold text-slate-900 mb-1">{stat.value}</p>
+              <p className="text-slate-600">{stat.label}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="container mx-auto px-6 py-16 md:py-24">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+            Elevate Your Financial Operations
+          </h2>
+          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+            Automate repetitive tasks, reduce manual errors, and unlock real-time analytics with our cutting-edge platform.
+          </p>
+        </div>
+        
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
+          <div className="space-y-4">
+            <p className="text-slate-700">
+              Automate repetitive financial tasks, reduce manual errors, and free up your team's time for strategic planning and decision-making.
+            </p>
+            <p className="text-slate-700">
+              Unlock the power of real-time analytics with our cutting-edge financial dashboard. Monitor your cash flow, track expenses, and forecast trends with precision—all in one place.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            {features.map((feature, idx) => (
+              <div key={idx} className="bg-white rounded-xl p-5 border border-slate-200 hover:border-violet-300 transition-colors">
+                <div className="text-violet-600 mb-3">{feature.icon}</div>
+                <h4 className="font-bold text-slate-800 mb-2">{feature.title}</h4>
+                <p className="text-sm text-slate-600">{feature.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        {/* How It Works */}
+        <div className="bg-gradient-to-r from-violet-50 to-purple-50 rounded-3xl p-8 md:p-12 border border-violet-100">
+          <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-8 text-center">
+            How It Works: Simplifying Your Financial Journey
+          </h3>
+          <p className="text-slate-700 text-center mb-12 max-w-2xl mx-auto">
+            Navigating finance can be complex, but we make it simple. Our intuitive tools empower you to take control of your financial future.
+          </p>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            {steps.map((step, idx) => (
+              <div key={idx} className="text-center">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-r from-violet-600 to-purple-600 text-white text-2xl font-bold flex items-center justify-center mx-auto mb-6">
+                  {step.number}
+                </div>
+                <h4 className="text-xl font-bold text-slate-900 mb-3">{step.title}</h4>
+                <p className="text-slate-600">{step.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="container mx-auto px-6 py-16">
+        <div className="bg-gradient-to-r from-slate-900 to-slate-800 rounded-3xl p-12 text-center text-white">
+          <h3 className="text-3xl md:text-4xl font-bold mb-6">
+            Ready to Transform Your Financial Management?
+          </h3>
+          <p className="text-lg text-slate-300 mb-8 max-w-2xl mx-auto">
+            Join thousands of businesses already using Moneta to streamline their financial operations.
+          </p>
+          <button className="bg-gradient-to-r from-amber-400 to-orange-500 text-slate-900 px-10 py-4 rounded-full font-bold text-lg hover:shadow-2xl hover:shadow-amber-500/30 transition-all">
+            Get Started For Free
+          </button>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t border-slate-200 bg-white py-8">
+        <div className="container mx-auto px-6 text-center text-slate-600">
+          <p>© 2024 Moneta. All rights reserved.</p>
+        </div>
+      </footer>
     </div>
   );
 };
 
-export default CareerPage;
-
-// import Image from "next/image";
-
-// export default function IntroSection() {
-//   return (
-//     <section id="why-fleetx" className="bg-[#FCFAEE] py-16 md:py-24  px-4 md:px-12 lg:px-24 xl:px-40 2xl:px-48">
-//       <div className="grid lg:grid-cols-2 gap-12 items-center">
-
-//         {/* LEFT – TEXT */}
-//         <div>
-//           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black mb-6">
-//             Logistics Done Right. Drivers Treated Better.
-//           </h2>
-
-//           <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-5">
-//             Welcome to <span className="font-semibold">Fleet X Logistics</span>, an Amazon Delivery Service Partner based in Havant, Hampshire.
-//             We specialise in reliable last-mile parcel delivery while creating a professional, supportive working environment for our drivers.
-//           </p>
-
-//           <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-5">
-//             We believe fair treatment, clear communication, and proper support lead to better results for everyone.
-//             That’s why we provide company-maintained electric vans, structured routes, and transparent onboarding from day one.
-//           </p>
-
-//           <p className="text-gray-700 text-base md:text-lg leading-relaxed">
-//             Whether you’re an experienced delivery driver or looking for a new opportunity,  
-//             <span className="font-semibold"> Fleet X Logistics</span> offers stability with flexibility.
-//           </p>
-//         </div>
-
-//         {/* RIGHT – IMAGES */}
-//         <div className="grid grid-cols-2 gap-4">
-          
-//           {/* Image 1 */}
-//           <div className="relative group overflow-hidden rounded-2xl shadow-lg">
-//             <Image
-//               src="/banner.webp"
-//               alt="Fleet X driver delivering parcel"
-//               width={500}
-//               height={500}
-//               className="object-cover w-full h-full group-hover:scale-105 transition duration-500"
-//             />
-//             <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition"></div>
-//           </div>
-
-//           {/* Image 2 */}
-//           <div className="relative group overflow-hidden rounded-2xl shadow-lg">
-//             <Image
-//               src="/6.webp"
-//               alt="Fleet X delivery van"
-//               width={500}
-//               height={500}
-//               className="object-cover w-full h-full group-hover:scale-105 transition duration-500"
-//             />
-//             <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition"></div>
-//           </div>
-
-//           {/* Image 3 – full width */}
-//           <div className="relative group overflow-hidden rounded-2xl shadow-lg col-span-2">
-//             <Image
-//               src="/7.webp"
-//               alt="Fleet X Logistics delivery team"
-//               width={1000}
-//               height={500}
-//               className="object-cover w-full h-56 md:h-64 group-hover:scale-105 transition duration-500"
-//             />
-//             <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition"></div>
-//           </div>
-
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
+export default MonetaLandingPage;
