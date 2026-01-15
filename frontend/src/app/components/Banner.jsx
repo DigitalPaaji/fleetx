@@ -9,28 +9,28 @@ export default function HeroSection() {
   return (
     <section
       className="relative min-h-screen flex items-start py-24 justify-center bg-cover bg-center"
-      style={{ backgroundImage: "url('/1.webp')" }}
+      style={{ backgroundImage: "url('/9.webp')" }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 "></div>
+      <div className="absolute inset-0 bg-linear-to-r from-black/60 via-black/40 to-black/60"></div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-4xl text-center px-6">
-        <h1 className="text-black text-3xl md:text-5xl font-bold leading-tight">
+      <div className="relative z-10 max-w-4xl text-center  px-6 py-24">
+        <h1 className=" text-3xl md:text-5xl font-bold leading-tight">
           Drive with Fleet X Logistics – Amazon Delivery Driver Jobs in Havant
         </h1>
 
-        <p className="mt-4 text-gray-700 text-lg md:text-xl">
+        <p className="mt-4 text-gray-200 text-md md:text-xl">
           Free company vans. Clear weekly pay. Consistent work.
           <br />
           Join a professional Amazon Delivery Service Partner in Hampshire.
         </p>
 
         {/* Buttons */}
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="mt-2 md:mt-8 flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="/apply"
-            className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-8 py-3 rounded-lg transition"
+            className="bg-[#551f1f] hover:bg-[#530505] text-white font-semibold px-8 py-3 rounded-lg transition"
           >
             Apply Now
           </a>

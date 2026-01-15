@@ -22,96 +22,72 @@ const MonetaLandingPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
+    <div className="min-h-screen">
       
       {/* Hero Section */}
-      <section className="container mx-auto px-6 py-16 md:py-24">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <div className="inline-flex items-center gap-2 bg-violet-50 text-violet-700 px-4 py-2 rounded-full mb-6">
-              <Star className="w-4 h-4" />
-              <span className="font-medium">Trusted by 1500+ companies</span>
-            </div>
-            
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight mb-6">
-              Enhance finances with{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-purple-600">
-                Moneta
-              </span>{' '}
-              tools
-            </h1>
-            
-            <p className="text-lg text-slate-600 mb-8">
-              Streamline your business's financial management with our intuitive, scalable SaaS platform. 
-              Designed for modern enterprises seeking precision and efficiency.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-gradient-to-r from-violet-600 to-purple-600 text-white px-8 py-3.5 rounded-full font-semibold flex items-center justify-center gap-2 hover:shadow-xl hover:shadow-violet-200 transition-all">
-                <Download className="w-5 h-5" />
-                Download App
-              </button>
-              <button className="border-2 border-slate-300 text-slate-700 px-8 py-3.5 rounded-full font-semibold hover:border-violet-400 hover:text-violet-700 transition-colors">
-                Start Free Trial
-              </button>
-            </div>
-          </div>
-          
-          {/* Dashboard Preview */}
-          <div className="relative">
-            <div className="relative bg-white rounded-3xl p-8 shadow-2xl border border-slate-200">
-              {/* User Profile */}
-              <div className="flex items-center gap-4 mb-8">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-r from-amber-400 to-orange-500" />
-                <div>
-                  <p className="text-sm text-slate-500">Hello,</p>
-                  <p className="font-bold text-slate-800">Ismu Adiyat</p>
-                </div>
-              </div>
-              
-              {/* Balance Card */}
-              <div className="bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl p-6 text-white mb-8">
-                <p className="text-slate-300 mb-2">Total Balance</p>
-                <p className="text-3xl font-bold mb-6">$5,502.45</p>
-                <div className="flex items-center gap-2">
-                  <div className="flex-1">
-                    <p className="text-sm text-slate-400">Income Analysis</p>
-                    <p className="text-lg font-semibold">$332,349</p>
-                  </div>
-                  <div className="bg-violet-500/20 px-4 py-2 rounded-lg">
-                    <span className="text-violet-300 font-medium">VISA</span>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Quick Actions */}
-              <div className="grid grid-cols-4 gap-4 mb-8">
-                {[
-                  { icon: <CreditCard className="w-5 h-5" />, label: "Balance" },
-                  { icon: <Send className="w-5 h-5" />, label: "Transfer" },
-                  { icon: <Users className="w-5 h-5" />, label: "Request" },
-                  { icon: <Zap className="w-5 h-5" />, label: "Active" }
-                ].map((action, idx) => (
-                  <button key={idx} className="flex flex-col items-center gap-2 p-3 rounded-xl hover:bg-slate-50 transition-colors">
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-violet-100 to-purple-100 flex items-center justify-center text-violet-600">
-                      {action.icon}
-                    </div>
-                    <span className="text-sm font-medium text-slate-700">{action.label}</span>
-                  </button>
-                ))}
-              </div>
-            </div>
-            
-            {/* Floating Elements */}
-            <div className="absolute -top-4 -right-4 bg-gradient-to-r from-emerald-500 to-teal-500 text-white px-6 py-2.5 rounded-full font-bold shadow-lg">
-              Live Preview
-            </div>
-          </div>
-        </div>
-      </section>
+<section className="container mx-auto px-6 py-16 md:py-24">
+  <div className="grid lg:grid-cols-2 gap-16 items-center">
+    {/* Dashboard Preview - Enhanced */}
+    <div className="">
+        <img 
+          src="/9.png" 
+          alt="Fleet X Logistics Dashboard Interface" 
+          className="w-full h-auto object-cover"
+        />
 
+     
+    </div>
+    
+    {/* Content */}
+    <div>
+      <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-50 border border-gray-200 mb-8">
+        <div className="w-2 h-2 rounded-full bg-[#530505] animate-pulse"></div>
+        <span className="text-sm font-medium text-gray-700">Amazon Delivery Service Partner</span>
+      </div>
+      
+      <h1 className="text-gray-900 text-4xl md:text-4xl font-bold leading-tight mb-8">
+        Logistics Done Right.
+        <br />
+        <span className="relative inline-block">
+          <span className="relative z-10 text-[#530505] ">Drivers Treated Better.</span>
+          <span className="absolute bottom-2 left-0 w-full h-3 bg-gray-100/80 -z-0"></span>
+        </span>
+      </h1>
+      
+      <div className="space-y-6 mb-10">
+        <div className="flex items-start gap-4">
+          <div className="w-6 h-6 rounded-lg bg-gray-50 border border-gray-200 flex items-center justify-center flex-shrink-0 mt-1">
+            <div className="w-2 h-2 rounded-full bg-[#530505]/20"></div>
+          </div>
+          <p className="text-lg text-gray-600">
+            Welcome to Fleet X Logistics, an Amazon Delivery Service Partner based in Havant, Hampshire. We specialise in reliable last-mile parcel delivery while creating a professional, supportive working environment.
+          </p>
+        </div>
+        
+        <div className="flex items-start gap-4">
+          <div className="w-6 h-6 rounded-lg bg-gray-50 border border-gray-200 flex items-center justify-center flex-shrink-0 mt-1">
+            <div className="w-2 h-2 rounded-full bg-[#530505]/20"></div>
+          </div>
+          <p className="text-lg text-gray-600">
+            We believe fair treatment, clear communication, and proper support lead to better results for everyone. That's why we provide company-maintained electric vans, structured routes, and transparent onboarding.
+          </p>
+        </div>
+        
+        <div className="flex items-start gap-4">
+          <div className="w-6 h-6 rounded-lg bg-gray-50 border border-gray-200 flex items-center justify-center flex-shrink-0 mt-1">
+            <div className="w-2 h-2 rounded-full bg-[#530505]/20"></div>
+          </div>
+          <p className="text-lg text-gray-600">
+            Whether you're an experienced delivery driver or looking for a new opportunity, Fleet X Logistics offers stability with flexibility.
+          </p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
       {/* Stats Section */}
-      <section className="container mx-auto px-6 py-12">
+      {/* <section className="container mx-auto px-6 py-12">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {stats.map((stat, idx) => (
             <div key={idx} className="bg-white rounded-2xl p-6 border border-slate-200 hover:border-violet-300 transition-colors">
@@ -121,83 +97,237 @@ const MonetaLandingPage = () => {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
-      {/* Features Section */}
-      <section className="container mx-auto px-6 py-16 md:py-24">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-            Elevate Your Financial Operations
-          </h2>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Automate repetitive tasks, reduce manual errors, and unlock real-time analytics with our cutting-edge platform.
-          </p>
+{/* Features Section */}
+<section className="container mx-auto px-6 py-16 md:py-24">
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-50 border border-gray-200 mb-6">
+      <span className="text-sm font-medium text-gray-700">Why Choose Us</span>
+    </div>
+    <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+      Why Drive for <span className="text-[#530505]">Fleet X Logistics</span>?
+    </h2>
+    <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+      We provide the tools and support you need to succeed — without hidden costs or complications.
+    </p>
+  </div>
+  
+<div className="mb-20">
+  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {[
+      {
+        icon: "🚐",
+        title: "Free Company Vans",
+        desc: "Modern automatic electric Mercedes Sprinter vans, fully maintained. No lease or rental charges.",
+        accent: "bg-blue-50 border-blue-100"
+      },
+      {
+        icon: "💷",
+        title: "Clear Weekly Pay",
+        desc: "Competitive daily rates paid weekly. VAT-registered drivers can earn more, with guidance provided.",
+        accent: "bg-green-50 border-green-100"
+      },
+      {
+        icon: "⏰",
+        title: "Flexible Working Days",
+        desc: "Work up to 6 days per week. Delivery routes typically start around midday and finish in the evening.",
+        accent: "bg-amber-50 border-amber-100"
+      },
+      {
+        icon: "📍",
+        title: "Consistent Routes",
+        desc: "Year-round work with Amazon. Most drivers remain within the same delivery areas.",
+        accent: "bg-purple-50 border-purple-100"
+      },
+      {
+        icon: "🤝",
+        title: "Full Support",
+        desc: "Help with self-employment setup, VAT registration, and invoicing so drivers can focus on delivering.",
+        accent: "bg-cyan-50 border-cyan-100"
+      },
+      {
+        icon: "📱",
+        title: "Modern Technology",
+        desc: "Easy-to-use apps and tools for route planning, tracking, and communication.",
+        accent: "bg-violet-50 border-violet-100"
+      }
+    ].map((feature, idx) => (
+      <div 
+        key={idx} 
+        className="group relative bg-white rounded-2xl p-8 border border-gray-200 hover:border-gray-300 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+      >
+        {/* Corner accent */}
+        <div className={`absolute top-0 right-0 w-16 h-16 rounded-bl-full ${feature.accent} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
+        
+        {/* Icon container */}
+        <div className="relative mb-6">
+          <div className="w-14 h-14 rounded-xl bg-gray-50 border border-gray-100 flex items-center justify-center text-2xl mb-2 group-hover:scale-110 transition-transform duration-300">
+            {feature.icon}
+          </div>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
-          <div className="space-y-4">
-            <p className="text-slate-700">
-              Automate repetitive financial tasks, reduce manual errors, and free up your team's time for strategic planning and decision-making.
-            </p>
-            <p className="text-slate-700">
-              Unlock the power of real-time analytics with our cutting-edge financial dashboard. Monitor your cash flow, track expenses, and forecast trends with precision—all in one place.
-            </p>
-          </div>
-          <div className="grid grid-cols-2 gap-4">
-            {features.map((feature, idx) => (
-              <div key={idx} className="bg-white rounded-xl p-5 border border-slate-200 hover:border-violet-300 transition-colors">
-                <div className="text-violet-600 mb-3">{feature.icon}</div>
-                <h4 className="font-bold text-slate-800 mb-2">{feature.title}</h4>
-                <p className="text-sm text-slate-600">{feature.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+        {/* Content */}
+        <h4 className="text-xl font-bold text-gray-900 mb-4 relative">
+          {feature.title}
+          <span className="absolute -left-3 top-1/2 w-1 h-6 bg-gray-300 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+        </h4>
         
-        {/* How It Works */}
-        <div className="bg-gradient-to-r from-violet-50 to-purple-50 rounded-3xl p-8 md:p-12 border border-violet-100">
-          <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-8 text-center">
-            How It Works: Simplifying Your Financial Journey
-          </h3>
-          <p className="text-slate-700 text-center mb-12 max-w-2xl mx-auto">
-            Navigating finance can be complex, but we make it simple. Our intuitive tools empower you to take control of your financial future.
-          </p>
+        <p className="text-gray-600 leading-relaxed mb-6">
+          {feature.desc}
+        </p>
+        
+        {/* Bottom indicator line */}
+        <div className="absolute bottom-0 left-8 right-8 h-0.5 bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
+        
+        {/* Hover indicator */}
+        <div className={`absolute bottom-0 left-1/2 w-0 h-0.5 ${feature.accent.split(' ')[0]} group-hover:w-full group-hover:left-0 transition-all duration-300`}></div>
+      </div>
+    ))}
+  </div>
+</div>
+
+
+
+{/* Driver Requirements & CTA - Minimal Version */}
+<div className="mb-20">
+  {/* Driver Requirements */}
+<div className="bg-white rounded-2xl p-8 md:p-12 border border-gray-200 mb-12">
+  <div className="grid lg:grid-cols-2 gap-12">
+    {/* Left Side - Requirements */}
+    <div>
+      <h2 className="text-3xl font-bold text-gray-900 mb-8 pb-6 border-b border-gray-200">
+        Who We Are Looking For
+      </h2>
+      
+      <p className="text-gray-600 mb-10">
+        To meet safety and insurance requirements, applicants must meet the following criteria:
+        <br /><br />
+        <span className='text-red-700 font-medium'>No previous delivery experience required. Full training is provided.</span>
+      </p>
+      
+      <div className="grid sm:grid-cols-2 gap-6">
+        {[
+          "Minimum age: 21 years or older",
+          "Full UK or EU driving licence (held at least 1 year)",
+          "No more than 6 penalty points",
+          "Legal right to live and work in the UK",
+          "Comfortable working as self-employed"
+        ].map((req, idx) => (
+          <div key={idx} className="flex items-start gap-3">
+            <div className="flex-shrink-0 mt-1">
+              <svg className="w-5 h-5 text-[#530505]" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+              </svg>
+            </div>
+            <p className="text-gray-700">{req}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+    
+    {/* Right Side - CTA with Image Placeholder */}
+    <div className="relative overflow-hidden rounded-xl border border-gray-100">
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-900/90 to-gray-800/90"></div>
+      
+{/* Background Image Wrapper */}
+<div className="absolute inset-0 overflow-hidden">
+  <img
+    src="/banner4.webp"
+    alt="Fleet X Logistics delivery driver at work"
+    className="w-full h-full object-cover"
+  
+  />
+
+  {/* Dark overlay for better text visibility */}
+  <div className="absolute inset-0 bg-black/40" />
+</div>
+
+      
+      <div className="relative z-10 p-8 h-full flex flex-col justify-end min-h-[400px]">
+        <div className=" rounded-lg p-2">
+        
           
-          <div className="grid md:grid-cols-3 gap-8">
-            {steps.map((step, idx) => (
-              <div key={idx} className="text-center">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-r from-violet-600 to-purple-600 text-white text-2xl font-bold flex items-center justify-center mx-auto mb-6">
-                  {step.number}
-                </div>
-                <h4 className="text-xl font-bold text-slate-900 mb-3">{step.title}</h4>
-                <p className="text-slate-600">{step.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+        
+          
 
-      {/* CTA Section */}
-      <section className="container mx-auto px-6 py-16">
-        <div className="bg-gradient-to-r from-slate-900 to-slate-800 rounded-3xl p-12 text-center text-white">
-          <h3 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Transform Your Financial Management?
-          </h3>
-          <p className="text-lg text-slate-300 mb-8 max-w-2xl mx-auto">
-            Join thousands of businesses already using Moneta to streamline their financial operations.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+  
+
+</section>
+
+  
+
+    {/* Footer Component - Minimal */}
+{/* <footer className="bg-gray-50 border-t border-gray-200">
+  <div className="container mx-auto px-6 py-12">
+    <div className="grid lg:grid-cols-3 gap-8 mb-12">
+      <div>
+        <h4 className="text-lg font-bold text-gray-900 mb-6">Contact Details</h4>
+        <div className="space-y-3">
+          <p className="text-gray-600">
+            <span className="font-medium">Email:</span> contact@fleetxlogistics.co.uk
           </p>
-          <button className="bg-gradient-to-r from-amber-400 to-orange-500 text-slate-900 px-10 py-4 rounded-full font-bold text-lg hover:shadow-2xl hover:shadow-amber-500/30 transition-all">
-            Get Started For Free
+          <p className="text-gray-600">
+            <span className="font-medium">Phone:</span> 07763 618300
+          </p>
+          <p className="text-gray-600">
+            <span className="font-medium">Location:</span> Havant, Hampshire
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <div className="bg-white rounded-lg p-6 border border-gray-200">
+          <h4 className="text-lg font-bold text-gray-900 mb-4">
+            Start Your Career With Us
+          </h4>
+          <p className="text-gray-600 text-sm mb-6">
+            Currently recruiting for Havant depot. Immediate start available.
+          </p>
+          <button className="w-full py-3 bg-[#530505] text-white rounded-lg hover:bg-[#3a0303] transition-colors">
+            Apply Now
           </button>
         </div>
-      </section>
+      </div>
 
-      {/* Footer */}
-      <footer className="border-t border-slate-200 bg-white py-8">
-        <div className="container mx-auto px-6 text-center text-slate-600">
-          <p>© 2024 Moneta. All rights reserved.</p>
+      <div>
+        <h4 className="text-lg font-bold text-gray-900 mb-6">Legal</h4>
+        <div className="space-y-4">
+          <p className="text-gray-600 text-sm">
+            © 2026 Fleet X Logistics Ltd. All rights reserved.
+          </p>
+          <p className="text-gray-600 text-sm">
+            Fleet X Logistics is a trading name of Fleet X Logistics Ltd, registered in England & Wales.
+          </p>
+          <div className="flex gap-4 mt-4">
+            <a href="/privacy-policy" className="text-gray-600 hover:text-[#530505] transition-colors text-sm">
+              Privacy Policy
+            </a>
+            <a href="/cookie-policy" className="text-gray-600 hover:text-[#530505] transition-colors text-sm">
+              Cookie Policy
+            </a>
+          </div>
         </div>
-      </footer>
+      </div>
+    </div>
+
+    <div className="pt-8 border-t border-gray-300 text-center">
+      <p className="text-gray-500 text-sm">
+        Professional Amazon Delivery Service Partner • Reliable Last-Mile Logistics
+      </p>
+    </div>
+  </div>
+</footer> */}
+
     </div>
   );
 };
