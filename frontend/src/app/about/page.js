@@ -1,9 +1,13 @@
 "use client";
 import { Shield, Users, Leaf, MapPin, Target, Heart } from "lucide-react";
 import Image from "next/image";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const AboutPage = () => {
   return (
+    <>
+    <Navbar/>
     <div className="min-h-screen bg-black text-white">
       {/* Hero Section */}
       <section className="relative overflow-hidden border-b border-gray-200/10 py-24 md:py-32">
@@ -315,6 +319,9 @@ const AboutPage = () => {
         </div>
       </section>
     </div>
+<Footer/>
+    </>
+
   );
 };
 

@@ -28,9 +28,12 @@ const Navbar = () => {
         {/* DESKTOP NAVIGATION */}
         <div className="hidden lg:flex items-center space-x-8 font-semibold">
           <div className="flex items-center space-x-8">
+            <Link href="/" className="text-gray-300  text-md tracking-wide transition-colors duration-200">
+              Home
+            </Link>
             <Link href="/careers" className="text-gray-300  text-md tracking-wide transition-colors duration-200">
               Careers
-            </Link>
+            </Link>                                
             <Link href="/faqs" className="text-gray-300  text-md tracking-wide transition-colors duration-200">
               Driver FAQs
             </Link>
@@ -46,7 +49,7 @@ const Navbar = () => {
           <div className="h-6 w-px bg-gray-200"></div>
           
           {/* BUTTON */}
-          <Link href="/contact">
+          <Link href="/apply">
             <div 
                         className=" flex items-center gap-2 border border-[#f0e5e5] hover:border-[#a7a5a5] text-white font-semibold px-6 py-2 transition"
 
@@ -104,7 +107,7 @@ const Navbar = () => {
           
           <div className="pt-4">
             <Link 
-              href="/contact"
+              href="/apply"
               onClick={() => setIsMenuOpen(false)}
             >
               <div className="border-2 border-gray-200 text-gray-300   text-md font-semibold text-sm py-3 px-6 flex items-center justify-center gap-2 ">

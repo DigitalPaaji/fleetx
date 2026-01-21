@@ -8,10 +8,16 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold  mb-6 pb-4 border-b border-gray-200/10">
+            {/* <h3 className="text-xl font-bold  mb-6 pb-4 border-b border-gray-200/10">
               Fleet X Logistics
-            </h3>
-            <p className="text-gray-200 mb-6 text-sm">
+            </h3> */}
+                    <img 
+              src="/logo.webp" 
+              alt="Fleet X Logistics" 
+              className="h-16 w-auto"
+              loading="lazy"
+            />
+            <p className="text-gray-200 my-6 text-sm">
               Professional Amazon Delivery Service Partner based in Havant, Hampshire.
             </p>
             <div className="space-y-2">
