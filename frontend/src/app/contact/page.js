@@ -13,6 +13,8 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -62,6 +64,9 @@ const ContactPage = () => {
   };
 
   return (
+    <>
+    <Navbar/>
+  
     <div className="min-h-screen bg-black text-white">
       {/* Hero Section */}
       <section className="relative overflow-hidden border-b border-gray-200/10 py-24 md:py-32">
@@ -500,6 +505,8 @@ const ContactPage = () => {
         </div>
       </section>
     </div>
+      <Footer/>
+    </>
   );
 };
 
