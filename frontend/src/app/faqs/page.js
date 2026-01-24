@@ -146,7 +146,7 @@ const FAQPage = () => {
               Everything you need to know about driving with Fleet X Logistics before you apply.
             </p>
             
-            <div className="flex flex-wrap justify-center gap-4 mt-8">
+            <div className="text-center w-fit mx-auto mt-8">
               <a
                 href="/careers"
                 className="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-6 py-3 transition flex items-center gap-2"
@@ -154,13 +154,7 @@ const FAQPage = () => {
                 <Truck className="w-4 h-4" />
                 View Driver Jobs
               </a>
-              <a
-                href="/careers#application-form"
-                className="bg-[#e20d0d] hover:bg-[#d12020] text-white font-semibold px-6 py-3 transition flex items-center gap-2"
-              >
-                <FileText className="w-4 h-4" />
-                Apply Now
-              </a>
+           
             </div>
           </div>
         </div>

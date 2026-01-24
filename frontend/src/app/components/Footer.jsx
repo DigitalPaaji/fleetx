@@ -81,10 +81,10 @@ export default function Footer() {
             </p>
             
             <div className="flex gap-6">
-              <Link href="/" className="text-gray-200  text-sm">
+              <Link href="/privacy-policy" className="text-gray-200  text-sm">
                 Privacy Policy
               </Link>
-              <Link href="/" className="text-gray-200  text-sm">
+              <Link href="/cookie-policy" className="text-gray-200  text-sm">
                 Cookie Policy
               </Link>
             </div>

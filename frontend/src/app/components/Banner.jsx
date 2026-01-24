@@ -23,15 +23,7 @@ export default function HeroSection() {
           Join a professional Amazon Delivery Service Partner in Hampshire.
         </p>
 
-        {/* Buttons */}
-          <div className="flex w-fit flex-col sm:flex-row gap-4 mt-3 xl:mt-6">
-                  <a
-                    href="/apply"
-                    className="bg-[#e20d0d] hover:bg-[#d12020] text-white font-semibold px-6 py-2 xl:py-4 transition"
-                  >
-                    Apply Now
-                  </a>
-              </div>
+
       </div>
     </section>
   );

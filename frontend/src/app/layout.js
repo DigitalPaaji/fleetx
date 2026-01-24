@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import DriverPopup from "./components/DriverPopup";
+import CookieConsentBanner from "./components/CookieBanner";
 
 
 const geistSans = Geist({
@@ -49,6 +51,8 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+          <DriverPopup />
+          <CookieConsentBanner/>
         {children}
       </body>
     </html>

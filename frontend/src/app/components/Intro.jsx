@@ -41,14 +41,7 @@ const MonetaLandingPage = () => {
                 in Havant, Hampshire. We specialise in reliable last-mile
                 delivery within a professional, supportive environment.
               </p>
-              <div className="flex w-fit flex-col sm:flex-row gap-4">
-                  <a
-                    href="/apply"
-                    className="bg-[#e20d0d] hover:bg-[#d12020] text-white font-semibold px-6 py-2 xl:py-4 transition"
-                  >
-                    Apply Now
-                  </a>
-              </div>
+     
             </div>
             <div className=" ">
               <div className="relative overflow-hidden ">
@@ -66,7 +59,7 @@ const MonetaLandingPage = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section id="why-fleet" className="container mx-auto py-16 md:py-24">
+      <section id="why-fleet" className=" mx-auto py-16 md:py-24">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2  bg-white/10 border border-white/20 mb-6">
             <span className="text-sm font-medium">Why Choose Us</span>
@@ -82,32 +75,32 @@ const MonetaLandingPage = () => {
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
           {[
             {
-              icon: "🚐",
+              icon: "/amazonvan.png",
               title: "Free Company Vans",
               desc: "Modern automatic electric Mercedes Sprinter vans, fully maintained.",
             },
             {
-              icon: "💷",
+              icon: "/pay.png",
               title: "Clear Weekly Pay",
               desc: "Competitive daily rates paid weekly. Guidance for VAT-registered drivers.",
             },
             {
-              icon: "⏰",
+              icon: "/work.png",
               title: "Flexible Working Days",
               desc: "Work up to 6 days per week. Midday start, evening finish routes.",
             },
             {
-              icon: "📍",
+              icon: "/amazonvan.png",
               title: "Consistent Routes",
               desc: "Year-round work with Amazon in familiar delivery areas.",
             },
             {
-              icon: "🤝",
+              icon: "/amazonvan.png",
               title: "Full Support",
               desc: "Help with self-employment setup, VAT, and invoicing.",
             },
             {
-              icon: "📱",
+              icon: "/amazonvan.png",
               title: "Modern Technology",
               desc: "Easy-to-use apps for route planning and communication.",
             },
@@ -116,9 +109,9 @@ const MonetaLandingPage = () => {
               key={idx}
               className="group relative bg-black border border-white/10 p-8 hover:border-[#ff0000]/40 transition-all duration-300 hover:-translate-y-1"
             >
-              <div className="w-14 h-14  bg-white/5 border border-white/10 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
-                {feature.icon}
-              </div>
+              <img className="w-14 h-14 p-2 bg-white/5 border border-white/10 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform"
+                src={feature.icon}
+              />
               <h4 className="text-xl font-bold mb-4 text-white">
                 {feature.title}
               </h4>
@@ -171,14 +164,7 @@ const MonetaLandingPage = () => {
                   </div>
                 ))}
               </div>
-              <div className="mt-12 ">
-                <a
-                  href="/apply"
-                  className="bg-[#e20d0d] hover:bg-[#d12020] text-white font-semibold px-6 py-2 xl:py-4 transition"
-                >
-                  Apply Now
-                </a>
-              </div>
+             
             </div>
             <div className="">
               <img

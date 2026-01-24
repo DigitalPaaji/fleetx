@@ -13,6 +13,7 @@ import {
   Zap,
 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const CareersPage = () => {
   const [formData, setFormData] = useState({
@@ -65,14 +66,7 @@ const CareersPage = () => {
                 Start your journey with Fleet X Logistics. Immediate starts available for reliable, self-employed delivery drivers working with an Amazon Delivery Service Partner.
               </p>
               
-              <div className="flex w-fit flex-col sm:flex-row gap-4">
-                <button
-                  onClick={() => document.getElementById('application-form')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="bg-[#e20d0d] hover:bg-[#d12020] text-white font-semibold px-6 py-2 xl:py-4 transition"
-                >
-                  Apply Now – Fast Track
-                </button>
-              </div>
+           
             </div>
             
             <div className="relative overflow-hidden">
@@ -107,29 +101,29 @@ const CareersPage = () => {
             <div className="space-y-6">
               {[
                 {
-                  time: "12:00 PM",
+                  time: "11:30 - 12:00 noon",
                   title: "Start Time",
                   desc: "Arrive at our Havant depot"
                 },
                 {
-                  time: "12:30 PM",
+                  time: "11:45 - 12:15 PM",
                   title: "Loading",
                   desc: "Collect your pre-sorted route and load your electric Mercedes Sprinter van"
                 },
                 {
-                  time: "1:00 PM",
+                  time: "12:15 - 1:00 PM",
                   title: "On the Road",
                   desc: "Follow the Amazon delivery app for navigation and delivery instructions"
                 },
                 {
-                  time: "Evening",
+                  time: "Late Evening",
                   title: "Finish",
                   desc: "Return the van to the depot once your route is completed"
                 },
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-4 group">
-                  <div className="flex-shrink-0 w-12 h-12 bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-[#ff0000]/40 transition">
-                    <Clock className="w-5 h-5" />
+                  <div className="shrink-0 w-12 h-12 bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-[#ff0000]/40 transition">
+                    <Image alt="" width={12} height={12} src="/amazonvan.png" className="w-full h-auto object-cover p-2" />
                   </div>
                   <div>
                     <h4 className="font-bold text-lg mb-1">{item.title}</h4>
@@ -163,9 +157,15 @@ const CareersPage = () => {
             </div>
             
             <div className="mt-8 p-4 bg-white/5 border border-white/10">
-              <p className="text-center font-semibold">
-                🚐 We operate from our Havant depot and serve local residential delivery routes
-              </p>
+              <p className="text-center font-semibold flex items-center gap-2">
+  <img
+    src="/amazonvan.png"
+    alt="Amazon delivery van"
+    className="w-10 h-auto"
+  />
+  We operate from our Havant depot and serve local delivery routes
+</p>
+
             </div>
           </div>
         </div>
