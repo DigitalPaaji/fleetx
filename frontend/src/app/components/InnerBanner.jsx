@@ -28,7 +28,7 @@ export default function InnerBanner() {
         {/* Buttons */}
         <div className="mt-2 lg:mt-8 w-fit mx-auto flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="/apply"
+            href="/contact"
             className="bg-[#e20d0d] hover:bg-[#d12020] text-white font-semibold px-6 py-2 transition"
           >
             Apply Now

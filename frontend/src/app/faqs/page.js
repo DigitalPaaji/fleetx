@@ -16,8 +16,6 @@ import {
   MapPin,
   Mail,
 } from "lucide-react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 const FAQPage = () => {
   const [activeAccordion, setActiveAccordion] = useState(null);
@@ -120,7 +118,7 @@ const FAQPage = () => {
 
   return (
     <>
-       <Navbar/>
+       
     <div className="min-h-screen bg-black text-white px-4 md:px-12 lg:px-24 xl:px-40 2xl:px-52">
       {/* FAQ Schema JSON-LD */}
   
@@ -382,7 +380,6 @@ const FAQPage = () => {
         </div>
       </section>
     </div>
-      <Footer/>
     </>
 
   );
