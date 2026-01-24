@@ -13,6 +13,8 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -25,34 +27,57 @@ const ContactPage = () => {
 
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission logic here
-    console.log("Form submitted:", formData);
+const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    // Check if subject is job application related
-    if (
-      formData.subject.toLowerCase().includes("job") ||
-      formData.message.toLowerCase().includes("apply") ||
-      formData.message.toLowerCase().includes("driver")
-    ) {
-      window.location.href = "/careers";
-      return;
-    }
+  // Basic validation
+  if (!formData.phone) {
+    alert("Please enter your phone number");
+    return;
+  }
 
-    // In production, send to your backend
-    setIsSubmitted(true);
-    setTimeout(() => setIsSubmitted(false), 5000);
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      subject: "General Enquiry",
-      message: "",
+
+  try {
+    // Send form data to your Node API
+    const response = await fetch("https://sendmail.digitalpaaji.com/sendmail", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        formdata: formData, // Your form data object
+        sendto: ["pahujakashish18@gmail.com"], // recipient(s)
+        subject: "New General Enquiry from Fleet X Logistics Website", // can be dynamic based on formData.subject
+      }),
     });
 
-    alert("Thank you for your message! We'll respond within 24 hours.");
-  };
+    const result = await response.json();
+
+    if (result.success) {
+      setIsSubmitted(true);
+
+      // Reset the form
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        subject: "General Enquiry",
+        message: "",
+      });
+
+      // Redirect or show thank you message
+      setTimeout(() => {
+        window.location.href = "/application-thank-you";
+      }, 1500);
+    } else {
+      alert(result.message || "Failed to send email. Please try again.");
+    }
+  } catch (err) {
+    console.error("Error sending email:", err);
+    alert("Something went wrong. Please try again later.");
+  }
+};
+
 
   const handleChange = (e) => {
     setFormData({
@@ -62,6 +87,8 @@ const ContactPage = () => {
   };
 
   return (
+    <>
+    <Navbar/>
     <div className="min-h-screen bg-black text-white">
       {/* Hero Section */}
       <section className="relative overflow-hidden border-b border-gray-200/10 py-24 md:py-32">
@@ -500,6 +527,9 @@ const ContactPage = () => {
         </div>
       </section>
     </div>
+    <Footer/>
+    </>
+
   );
 };
 

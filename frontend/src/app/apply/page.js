@@ -41,7 +41,7 @@ const handleSubmit = async (e) => {
       body: JSON.stringify({
         formdata: formData,  
         sendto: ["pahujakashish18@gmail.com"], 
-        subject: "New Delivery Driver Application",
+        subject: "New Delivery Driver Application from Fleet X Logistics Website",
       }),
     });
 
