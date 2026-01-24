@@ -3,8 +3,8 @@ import Link from "next/link";
 // Footer.jsx
 export default function Footer() {
   return (
-    <footer className="text-gray-90  px-4 md:px-12 lg:px-24 xl:px-40 2xl:px-52">
-      <div className="container mx-auto px-6 py-12">
+    <footer className="text-gray-90  px-6 md:px-12 lg:px-12 xl:px-32 2xl:px-48">
+      <div className="container mx-auto py-12">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div>
@@ -66,9 +66,9 @@ export default function Footer() {
               <p className="text-gray-200 mb-6">
                 We are currently recruiting for our Havant depot. Positions are filled on a rolling basis.
               </p>
-              <button className="px-8 py-3 border border-[#f0e5e5] hover:border-[#a7a5a5] cursor-pointer text-white font-semibold transition-colors">
+              <Link href={'/apply'} className="px-8 py-3 border border-[#f0e5e5] hover:border-[#a7a5a5] cursor-pointer text-white font-semibold transition-colors">
                 Start Your Application
-              </button>
+              </Link>
             </div>
           </div>
         </div>

@@ -16,6 +16,8 @@ import {
   MapPin,
   Mail,
 } from "lucide-react";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const FAQPage = () => {
   const [activeAccordion, setActiveAccordion] = useState(null);
@@ -118,8 +120,8 @@ const FAQPage = () => {
 
   return (
     <>
-       
-    <div className="min-h-screen bg-black text-white px-4 md:px-12 lg:px-24 xl:px-40 2xl:px-52">
+      <Navbar/> 
+    <div className="min-h-screen bg-black text-white px-6 md:px-12 lg:px-12 xl:px-32 2xl:px-48">
       {/* FAQ Schema JSON-LD */}
   
       {/* Hero Section */}
@@ -131,7 +133,7 @@ const FAQPage = () => {
               <span className="text-sm font-medium">Frequently Asked Questions</span>
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight mb-6">
               Driver Questions
               <br />
               <span className="text-[#ff0000]">Answered</span>
@@ -140,7 +142,7 @@ const FAQPage = () => {
             {/* SEPARATOR */}
             <div className="w-24 h-0.5 mb-4 bg-[#ff0000] mx-auto"></div>
             
-            <p className="text-white/90 text-md lg:text-lg mb-8 max-w-2xl mx-auto">
+            <p className="text-white/90 text-md  mb-8 max-w-2xl mx-auto">
               Everything you need to know about driving with Fleet X Logistics before you apply.
             </p>
             
@@ -191,7 +193,7 @@ const FAQPage = () => {
                         <HelpCircle className="w-5 h-5 text-[#ff0000]" />
                       </div> */}
                       <div className="text-left">
-                        <h3 className="text-xl font-bold mb-2 transition-colors">
+                        <h3 className="text-lg md:text-xl font-bold mb-2 transition-colors">
                           {item.q}
                         </h3>
                         <div 
@@ -209,7 +211,7 @@ const FAQPage = () => {
                       </div>
                     </div>
                     <ChevronDown 
-                      className={`w-5 h-5 flex-shrink-0 mt-1 transform transition-transform duration-300 ${
+                      className={`w-5 h-5 shrink-0 mt-1 transform transition-transform duration-300 ${
                         activeAccordion === index ? 'rotate-180 text-[#ff0000]' : 'text-white/60'
                       }`}
                     />
@@ -219,7 +221,7 @@ const FAQPage = () => {
             </div>
 
             {/* Contact Banner */}
-            <div className="mt-16 p-8 md:p-12 bg-gradient-to-r from-black to-gray-900 border border-white/10">
+            <div className="mt-16 p-8 md:p-12 bg-linear-to-r from-black to-gray-900 border border-white/10">
               <div className="flex flex-wrap xl:flex-nowrap justify-between gap-8 items-start xl:items-center">
                 <div>
                   <h3 className="text-2xl font-bold mb-4">
@@ -308,12 +310,12 @@ const FAQPage = () => {
               <span className="text-sm font-medium">Get in Touch</span>
             </div>
             
-            <h3 className="text-3xl font-bold mb-6">
+            <h3 className="text-2xl md:text-3xl font-bold mb-6">
               Still Have a Question?
             </h3>
             
-            <p className="text-white/90 text-lg mb-10 max-w-2xl mx-auto">
-              If we haven't answered something, feel free to message us on WhatsApp. If you're happy with what you've read, we'd love to have you join the team.
+            <p className="text-white/90  mb-10 max-w-2xl mx-auto">
+              If we haven&apos;t answered something, feel free to message us on WhatsApp. If you're happy with what you've read, we'd love to have you join the team.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -380,6 +382,7 @@ const FAQPage = () => {
         </div>
       </section>
     </div>
+    <Footer/>
     </>
 
   );

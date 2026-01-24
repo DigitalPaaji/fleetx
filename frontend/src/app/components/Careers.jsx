@@ -42,17 +42,17 @@ const CareersPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white px-4 md:px-12 xl:px-24 xl:px-40 2xl:px-52">
+    <div className="min-h-screen bg-black text-white px-6 md:px-12 lg:px-12 xl:px-32 2xl:px-48">
       {/* Hero Section */}
       <section className="border-b border-gray-200/10 relative flex items-center justify-center bg-cover bg-center py-24">
-        <div className="relative z-10 w-full px-6 py-12">
+        <div className="relative z-10 w-full py-12">
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-12 items-center">
             <div className="text-left">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 border border-white/20 mb-6">
                 <span className="text-sm font-medium">Immediate Starts Available</span>
               </div>
               
-              <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold leading-tight mb-6">
+              <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold leading-tight mb-6">
                 Delivery Driver Jobs in
                 <br />
                 <span className="text-[#ff0000]">Havant & Hampshire</span>
@@ -87,15 +87,15 @@ const CareersPage = () => {
       </section>
 
       {/* The Role – What to Expect */}
-      <section className="container mx-auto px-6 py-16 md:py-24">
-        <div className="text-center mb-16">
+      <section className="container mx-auto  py-16 md:py-24">
+        <div className="md:text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 border border-white/20 mb-6">
             <span className="text-sm font-medium">The Role</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
             What to Expect
           </h2>
-          <p className="text-lg max-w-3xl mx-auto">
+          <p className=" max-w-3xl mx-auto">
             As a Delivery Driver with Fleet X Logistics, you are a key part of our operation and the face of our service. Working as an Amazon Delivery Service Partner, you will be delivering parcels safely and efficiently to customers across Havant and the wider Hampshire area.
           </p>
         </div>
@@ -174,14 +174,14 @@ const CareersPage = () => {
       {/* What We Offer You */}
       <section className="py-16 bg-white/5">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
+          <div className="md:text-center mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 border border-white/20 mb-6">
               <span className="text-sm font-medium">Benefits</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
               What We Offer You
             </h2>
-            <p className="text-lg max-w-2xl mx-auto">
+            <p className=" max-w-2xl mx-auto">
               We believe that when drivers are supported properly, everyone benefits. That's why we offer a clear, fair, and well-structured driver package.
             </p>
           </div>
@@ -244,10 +244,10 @@ const CareersPage = () => {
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 border border-white/20 mb-6">
               <span className="text-sm font-medium">Requirements</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">
               Do You Have What It Takes?
             </h2>
-            <p className="text-white/90 text-lg mb-10">
+            <p className="text-white/90  mb-10">
               To meet safety, insurance, and Amazon compliance requirements, all applicants must meet the following criteria:
             </p>
             
@@ -285,14 +285,14 @@ const CareersPage = () => {
       <section id="application-form" className="py-16 bg-white/5">
         <div className="container mx-auto px-6">
           <div className="max-w-2xl mx-auto">
-            <div className="text-center mb-12">
+            <div className="md:text-center mb-12">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 border border-white/20 mb-6">
                 <span className="text-sm font-medium">Apply Now</span>
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 Fast-Track Application
               </h2>
-              <p className="text-lg">
+              <p className="">
                 Complete the short form below. Our recruitment team reviews applications daily and will contact you via WhatsApp or phone within 24 hours.
               </p>
             </div>
@@ -407,7 +407,7 @@ const CareersPage = () => {
                   {["ASAP", "In 2 weeks", "Other"].map((option) => (
                     <label
                       key={option}
-                      className={`flex items-center justify-center p-4 border cursor-pointer transition ${
+                      className={`flex items-center justify-start lg:justify-center  p-2 lg:p-4 border cursor-pointer transition ${
                         formData.startDate === option
                           ? "border-[#ff0000]"
                           : "border-white/10 hover:border-white/30"
@@ -446,20 +446,20 @@ const CareersPage = () => {
       <section className="py-16">
         <div className="container mx-auto px-6">
           <div className="max-w-2xl mx-auto text-center">
-            <h3 className="text-3xl font-bold mb-6">
+            <h3 className="text-2xl font-bold mb-6">
               Have a Question Before Applying?
             </h3>
-            <p className="text-white/90 text-lg mb-10">
+            <p className="text-white/90  mb-10">
               Prefer to speak to us first? No problem. Our recruitment team is here to help.
             </p>
             
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-black border border-white/10 p-8 hover:border-[#ff0000]/40 transition">
                 <Phone className="w-12 h-12 text-[#ff0000] mx-auto mb-4" />
-                <h4 className="text-xl font-bold mb-2">Call / WhatsApp</h4>
+                <h4 className="text-lg font-bold mb-2">Call / WhatsApp</h4>
                 <a 
                   href="tel:07763618300" 
-                  className="text-2xl font-bold hover:text-[#ff0000] transition"
+                  className="text-xl font-bold hover:text-[#ff0000] transition"
                 >
                   07763 618300
                 </a>
@@ -468,10 +468,10 @@ const CareersPage = () => {
               
               <div className="bg-black border border-white/10 p-8 hover:border-[#ff0000]/40 transition">
                 <Mail className="w-12 h-12 text-[#ff0000] mx-auto mb-4" />
-                <h4 className="text-xl font-bold mb-2">Email Us</h4>
+                <h4 className="text-lg font-bold mb-2">Email Us</h4>
                 <a 
                   href="mailto:recruitment@fleetxlogistics.co.uk" 
-                  className="text-lg font-bold hover:text-[#ff0000] transition break-all"
+                  className="text-md font-bold hover:text-[#ff0000] transition break-all"
                 >
                   recruitment@fleetxlogistics.co.uk
                 </a>

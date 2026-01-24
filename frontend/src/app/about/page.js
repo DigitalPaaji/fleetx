@@ -35,21 +35,21 @@ const AboutPage = () => {
 
             <div className="w-24 h-0.5 mb-6 bg-[#ff0000] mx-auto"></div>
 
-            <p className="text-white/90 text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+            <p className="text-white/90 text-md md:text-xl mb-8 max-w-2xl mx-auto">
               We are Fleet X Logistics — dedicated to excellence, powered by people, and helping shape the future of last-mile delivery across Hampshire.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">
               <a
                 href="/careers"
-                className="bg-[#e20d0d] hover:bg-[#d12020] text-white font-semibold px-8 py-4 transition inline-flex items-center justify-center gap-3"
+                className="bg-[#e20d0d] hover:bg-[#d12020] text-white font-semibold px-8 py-3 transition inline-flex items-center justify-center gap-3"
               >
                 <Users className="w-5 h-5" />
                 Join Our Team
               </a>
               <a
                 href="#our-story"
-                className="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-8 py-4 transition inline-flex items-center justify-center gap-3"
+                className="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-8 py-3 transition inline-flex items-center justify-center gap-3"
               >
                 <Target className="w-5 h-5" />
                 Our Story
@@ -60,7 +60,7 @@ const AboutPage = () => {
       </section>
 
       {/* Our Story Section */}
-      <section id="our-story" className="py-16 md:py-24   px-4 md:px-12 lg:px-24 xl:px-40 2xl:px-52">
+      <section id="our-story" className="py-16 md:py-24 px-6 md:px-12 lg:px-12 xl:px-32 2xl:px-48">
         <div className=" px-6">
           <div className="">
             <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
@@ -75,7 +75,7 @@ const AboutPage = () => {
                 </h2>
                 
                 <div className="space-y-4 text-white/80">
-                  <p className="text-lg">
+                  <p className="">
                     Fleet X Logistics was built with a simple but important mission: to provide a reliable, high-quality delivery service while creating a workplace where drivers genuinely feel supported and respected.
                   </p>
                   <p>
@@ -123,7 +123,7 @@ const AboutPage = () => {
       <section className="py-16 md:py-24 border-y border-gray-200/10 mx-4 md:mx-12 lg:mx-24 xl:mx-40 2xl:mx-52">
         <div className="container mx-auto px-6">
           <div className="mx-auto">
-            <div className="text-center mb-16">
+            <div className="md:text-center mb-16">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 border border-white/20 mb-6">
                 <Heart className="w-4 h-4 text-[#ff0000]" />
                 <span className="text-sm font-medium">Our Values</span>
@@ -133,7 +133,7 @@ const AboutPage = () => {
                 The Fleet X Difference
               </h2>
               
-              <p className="text-white/80 text-lg max-w-2xl mx-auto">
+              <p className="text-white/80  max-w-2xl mx-auto">
                 The logistics industry can be demanding, but at Fleet X Logistics we choose to do things differently. Our culture is built around three core principles.
               </p>
             </div>
@@ -200,7 +200,7 @@ const AboutPage = () => {
       </section>
 
       {/* Location & Community */}
-      <section className="py-16 md:py-24   px-4 md:px-12 lg:px-24 xl:px-40 2xl:px-52">
+      <section className="py-16 md:py-24   px-6 md:px-12 lg:px-12 xl:px-32 2xl:px-48">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -231,7 +231,7 @@ const AboutPage = () => {
                 </h2>
                 
                 <div className="space-y-4 text-white/80">
-                  <p className="text-lg">
+                  <p className="">
                     Fleet X Logistics is a locally based business serving the Havant and wider Hampshire area. From our local depot, we support nearby communities with reliable delivery services while creating steady work opportunities for local drivers.
                   </p>
                   <p>
@@ -259,7 +259,7 @@ const AboutPage = () => {
       </section>
 
       {/* Join The Family CTA */}
-      <section className="  px-4 md:px-12 lg:px-24 xl:px-40 2xl:px-52 py-16 md:py-24 bg-gradient-to-r from-black via-gray-900 to-black">
+      <section className="  px-6 md:px-12 lg:px-12 xl:px-32 2xl:px-48 py-16 md:py-24 bg-gradient-to-r from-black via-gray-900 to-black">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 border border-white/20 mb-6">
@@ -271,7 +271,7 @@ const AboutPage = () => {
               Be Part of Our Journey
             </h3>
             
-            <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
+            <p className="text-white/90 mb-8 max-w-2xl mx-auto">
               We are growing steadily and are always looking for reliable, motivated people to grow with us. If you're looking for a logistics company that values your time, effort, and professionalism, Fleet X Logistics could be the right fit for you.
             </p>
             

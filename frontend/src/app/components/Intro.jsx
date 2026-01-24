@@ -18,16 +18,16 @@ const MonetaLandingPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white px-4 md:px-12 xl:px-24 xl:px-40 2xl:px-52 ">
+    <div className="min-h-screen bg-black text-white px-6 md:px-12 lg:px-12 xl:px-32 2xl:px-48 ">
       {/* Hero Banner */}
 
       <section className="border-b border-gray-200/10 relative flex items-center justify-center bg-cover bg-center py-24">
 
-        <div className="relative z-10  w-full px-6 py-12 ">    
+        <div className="relative z-10  w-full py-12 ">    
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-12 items-center">
             <div className="text-left">
          
-              <h2 className="text-4xl md:text-5xl xl:text-6xl font-bold leading-tight mb-6">
+              <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold leading-tight mb-6">
                 logistics done right.
                 <br />
                 drivers treated better.
@@ -66,12 +66,12 @@ const MonetaLandingPage = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section id="why-fleet" className="container mx-auto px-6 py-16 md:py-24">
+      <section id="why-fleet" className="container mx-auto py-16 md:py-24">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2  bg-white/10 border border-white/20 mb-6">
             <span className="text-sm font-medium">Why Choose Us</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Why Drive for{" "}
             <span className="text-[#ff0000]">Fleet X Logistics</span>?
           </h2>
@@ -131,7 +131,7 @@ const MonetaLandingPage = () => {
 
       {/* Driver Requirements & CTA */}
       <section className="py-16">
-        <div className="bg-black border-y border-white/10 p-8 md:p-12">
+        <div className="bg-black border-y border-white/10 py-8 md:py-12">
           <div className="grid xl:grid-cols-2 gap-12">
             <div>
               <h2 className="text-3xl font-bold mb-8 pb-6 border-b border-white/10">
