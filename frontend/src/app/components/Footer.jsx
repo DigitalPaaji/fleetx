@@ -77,7 +77,8 @@ export default function Footer() {
         <div className="pt-8 border-t border-gray-200/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-200 text-sm">
-              Fleet X Logistics is a trading name of Fleet X Logistics Ltd, registered in England & Wales.<a href="https://digitalpaaji.com" className="hover:text-red-500"> Designed by Digital Paaji.</a> All Rights Reserved.
+              Fleet X Logistics is a trading name of Fleet X Logistics Ltd, registered in England & Wales.
+           {/* <a href="https://digitalpaaji.com" className="hover:text-red-500"> Designed by Digital Paaji.</a> All Rights Reserved. */}
             </p>
             
             <div className="flex gap-6">

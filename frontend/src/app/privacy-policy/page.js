@@ -6,206 +6,132 @@ const PrivacyPolicyPage = () => {
   return (
     <>
       <Navbar />
-      <div className="min-h-screen bg-black text-white px-6 md:px-12 lg:px-12 xl:px-32 2xl:px-48">
+      <div className="min-h-screen bg-black text-white px-6 md:px-12 lg:px-24 xl:px-32 py-12 md:py-24">
         
-        {/* Hero Section */}
-        <section className="border-b border-gray-200/10 py-24">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Privacy Policy</h1>
-            <div className="w-24 h-0.5 mb-6 bg-[#ff0000]"></div>
-            <p className="text-white/80 text-lg">
-              Fleet X Logistics Ltd ("we", "us", "our") respects your privacy and is committed to protecting your personal data.
+        <div className=" mx-auto space-y-12">
+
+          {/* Header / Intro */}
+          <div className="border-b border-white/10 pb-8">
+            <h1 className="text-4xl font-bold mb-6">Privacy Policy</h1>
+            <div className="w-20 h-1 bg-[#ff0000] mb-6"></div>
+            <p className="text-lg text-white/90 font-medium mb-2">Fleet X Logistics Ltd</p>
+            <p className="text-white/80 leading-relaxed">
+              Fleet X Logistics Ltd (“we”, “us”, “our”) respects your privacy and is committed to protecting your personal data. 
               This policy explains how we collect and use your information when you visit our website or apply for work with us.
             </p>
           </div>
-        </section>
 
-        {/* Main Content */}
-        <section className="py-16 md:py-24">
-          <div className="max-w-4xl mx-auto">
-            
-            <div className="space-y-12">
-              
-              {/* Information We Collect */}
-              <div>
-                <h2 className="text-2xl font-bold mb-6 pb-2 border-b border-white/10">Information We Collect</h2>
-                <div className="grid md:grid-cols-2 gap-6 mt-6">
-                  <div className="space-y-4">
-                    <div className="p-4 bg-white/5 rounded-lg">
-                      <h3 className="font-semibold mb-2">Personal Information</h3>
-                      <ul className="text-white/70 space-y-1">
-                        <li>• Name</li>
-                        <li>• Phone number</li>
-                        <li>• Email address</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="space-y-4">
-                    <div className="p-4 bg-white/5 rounded-lg">
-                      <h3 className="font-semibold mb-2">Other Data</h3>
-                      <ul className="text-white/70 space-y-1">
-                        <li>• Application details</li>
-                        <li>• IP address</li>
-                        <li>• Basic device data</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* How We Use Your Information */}
-              <div>
-                <h2 className="text-2xl font-bold mb-6 pb-2 border-b border-white/10">How We Use Your Information</h2>
-                <div className="bg-white/5 p-6 rounded-lg">
-                  <ul className="space-y-3 text-white/80">
-                    <li className="flex items-start">
-                      <span className="text-[#ff0000] mr-3">•</span>
-                      Driver recruitment and applications
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-[#ff0000] mr-3">•</span>
-                      Contacting you by phone, email, or WhatsApp
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-[#ff0000] mr-3">•</span>
-                      Onboarding and compliance checks
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-[#ff0000] mr-3">•</span>
-                      Legal and operational purposes
-                    </li>
-                  </ul>
-                  <div className="mt-6 p-4 bg-black/30 border border-white/10 rounded">
-                    <p className="text-white/80">We do not sell your personal data.</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* WhatsApp Applications */}
-              <div>
-                <h2 className="text-2xl font-bold mb-6 pb-2 border-b border-white/10">WhatsApp Applications</h2>
-                <div className="bg-white/5 p-6 rounded-lg">
-                  <p className="text-white/80">
-                    If you apply via WhatsApp, your information is processed through WhatsApp's platform in line with their privacy policy. We only use this data for recruitment purposes.
-                  </p>
-                </div>
-              </div>
-
-              {/* Sharing Your Information */}
-              <div>
-                <h2 className="text-2xl font-bold mb-6 pb-2 border-b border-white/10">Sharing Your Information</h2>
-                <div className="bg-white/5 p-6 rounded-lg">
-                  <p className="text-white/80 mb-4">Your data may be shared only when necessary with:</p>
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div className="p-4 bg-black/30 rounded">
-                      <p className="text-white/80">• Amazon systems (for onboarding and compliance)</p>
-                    </div>
-                    <div className="p-4 bg-black/30 rounded">
-                      <p className="text-white/80">• Recruitment, compliance, or onboarding service providers</p>
-                    </div>
-                    <div className="p-4 bg-black/30 rounded md:col-span-2">
-                      <p className="text-white/80">• Professional advisers if legally required</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Data Storage & Security */}
-              <div>
-                <h2 className="text-2xl font-bold mb-6 pb-2 border-b border-white/10">Data Storage & Security</h2>
-                <div className="bg-white/5 p-6 rounded-lg">
-                  <p className="text-white/80">
-                    We store your data securely and take reasonable steps to protect it from unauthorised access or misuse.
-                  </p>
-                </div>
-              </div>
-
-              {/* Data Retention */}
-              <div>
-                <h2 className="text-2xl font-bold mb-6 pb-2 border-b border-white/10">Data Retention</h2>
-                <div className="bg-white/5 p-6 rounded-lg">
-                  <p className="text-white/80">
-                    We keep your data only for as long as needed for recruitment, compliance, or legal reasons.
-                  </p>
-                </div>
-              </div>
-
-              {/* Your Rights */}
-              <div>
-                <h2 className="text-2xl font-bold mb-6 pb-2 border-b border-white/10">Your Rights</h2>
-                <div className="bg-white/5 p-6 rounded-lg">
-                  <p className="text-white/80 mb-4">You have the right to:</p>
-                  <div className="grid md:grid-cols-3 gap-4 mb-6">
-                    <div className="p-4 bg-black/30 rounded text-center">
-                      <p className="text-white font-medium">Access your data</p>
-                    </div>
-                    <div className="p-4 bg-black/30 rounded text-center">
-                      <p className="text-white font-medium">Correct inaccurate information</p>
-                    </div>
-                    <div className="p-4 bg-black/30 rounded text-center">
-                      <p className="text-white font-medium">Request deletion of your data</p>
-                    </div>
-                  </div>
-                  <div className="p-4 bg-black/30 border border-white/10 rounded">
-                    <p className="text-white/80">To make a request, contact:</p>
-                    <a 
-                      href="mailto:contact@fleetxlogistics.co.uk" 
-                      className="text-[#ff0000] hover:underline font-medium text-lg"
-                    >
-                      contact@fleetxlogistics.co.uk
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              {/* Updates */}
-              <div>
-                <h2 className="text-2xl font-bold mb-6 pb-2 border-b border-white/10">Updates</h2>
-                <div className="bg-white/5 p-6 rounded-lg">
-                  <p className="text-white/80">
-                    This policy may be updated occasionally. The latest version will always be available on our website.
-                  </p>
-                </div>
-              </div>
-
+          {/* Information We Collect */}
+          <section>
+            <h2 className="text-2xl font-bold mb-4 text-white">Information We Collect</h2>
+            <div className="bg-white/5 p-6 rounded-lg border-l-4 border-[#ff0000]">
+              <p className="mb-4 text-white/80">We may collect:</p>
+              <ul className="grid md:grid-cols-2 gap-2 text-white/80 list-disc list-inside">
+                <li>Name</li>
+                <li>Phone number</li>
+                <li>Email address</li>
+                <li>Application details</li>
+                <li>IP address and basic device data</li>
+              </ul>
             </div>
+          </section>
 
-            {/* Contact Card */}
-            <div className="mt-16 p-8 bg-white/5 border border-white/10 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4">Contact Information</h3>
-              <p className="text-white/80 mb-6">
-                For any questions regarding this Privacy Policy or to exercise your data rights:
+          {/* How We Use Your Information */}
+          <section>
+            <h2 className="text-2xl font-bold mb-4 text-white">How We Use Your Information</h2>
+            <ul className="space-y-3 text-white/80 mb-6">
+              <li className="flex items-start">
+                <span className="text-[#ff0000] mr-2">➜</span> Driver recruitment and applications
+              </li>
+              <li className="flex items-start">
+                <span className="text-[#ff0000] mr-2">➜</span> Contacting you by phone, email, or WhatsApp
+              </li>
+              <li className="flex items-start">
+                <span className="text-[#ff0000] mr-2">➜</span> Onboarding and compliance checks
+              </li>
+              <li className="flex items-start">
+                <span className="text-[#ff0000] mr-2">➜</span> Legal and operational purposes
+              </li>
+            </ul>
+            <p className="text-white/60 text-sm italic border-t border-white/10 pt-3 inline-block">
+              We do not sell your personal data.
+            </p>
+          </section>
+
+          {/* WhatsApp & Sharing Grid */}
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* WhatsApp */}
+            <section>
+              <h2 className="text-xl font-bold mb-4 text-white">WhatsApp Applications</h2>
+              <p className="text-white/80 text-sm leading-relaxed">
+                If you apply via WhatsApp, your information is processed through WhatsApp’s platform in line with their privacy policy. We only use this data for recruitment purposes.
               </p>
-              <div className="flex items-center justify-between">
-                <a 
-                  href="mailto:contact@fleetxlogistics.co.uk" 
-                  className="text-white hover:text-[#ff0000] transition font-medium"
-                >
+            </section>
+
+            {/* Sharing */}
+            <section>
+              <h2 className="text-xl font-bold mb-4 text-white">Sharing Your Information</h2>
+              <p className="text-white/80 text-sm mb-2">Shared only when necessary with:</p>
+              <ul className="text-white/80 text-sm space-y-1 list-disc list-inside">
+                <li>Amazon systems (onboarding)</li>
+                <li>Recruitment/Compliance providers</li>
+                <li>Professional advisers (legal)</li>
+              </ul>
+            </section>
+          </div>
+
+          {/* Storage & Retention */}
+          <section className="bg-white/5 p-6 rounded-lg">
+            <div className="mb-6">
+              <h3 className="text-lg font-bold text-white mb-2">Data Storage & Security</h3>
+              <p className="text-white/80 text-sm">
+                We store your data securely and take reasonable steps to protect it from unauthorised access or misuse.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-bold text-white mb-2">Data Retention</h3>
+              <p className="text-white/80 text-sm">
+                We keep your data only for as long as needed for recruitment, compliance, or legal reasons.
+              </p>
+            </div>
+          </section>
+
+          {/* Your Rights & Contact */}
+          <section>
+            <h2 className="text-2xl font-bold mb-4 text-white">Your Rights</h2>
+            <div className="flex flex-col md:flex-row gap-8 justify-between items-start">
+              <div className="flex-1">
+                <p className="text-white/80 mb-3">You have the right to:</p>
+                <ul className="list-disc list-inside text-white/80 space-y-1">
+                  <li>Access your data</li>
+                  <li>Correct inaccurate information</li>
+                  <li>Request deletion of your data</li>
+                </ul>
+              </div>
+              
+              <div className="bg-[#ff0000]/10 p-6 rounded border border-[#ff0000]/30 w-full md:w-auto">
+                <p className="text-white/70 text-sm mb-1 uppercase tracking-wider">To make a request:</p>
+                <a href="mailto:contact@fleetxlogistics.co.uk" className="text-xl font-medium text-white hover:text-[#ff0000] transition">
                   contact@fleetxlogistics.co.uk
                 </a>
-                <a 
-                  href="/"
-                  className="px-6 py-3 bg-[#ff0000] hover:bg-[#d12020] text-white font-medium transition"
-                >
-                  Back to Home
-                </a>
               </div>
             </div>
+          </section>
 
-          </div>
-        </section>
-
-        {/* Footer Links */}
-        <section className="py-8 border-t border-white/10">
-          <div className="max-w-4xl mx-auto">
-            <div className="flex flex-wrap gap-6">
-              <a href="/" className="text-white/70 hover:text-white transition">Home</a>
-              <a href="/careers" className="text-white/70 hover:text-white transition">Careers</a>
-              <a href="/cookie-policy" className="text-white/70 hover:text-white transition">Cookie Policy</a>
+          {/* Updates & Navigation */}
+          <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p className="text-white/50 text-sm">
+              Updates: This policy may be updated occasionally. <br />
+              Last version available on our website.
+            </p>
+            <div className="flex gap-4">
+               <a href="/" className="text-sm font-semibold text-white hover:text-[#ff0000] transition">Home</a>
+               <span className="text-white/30">|</span>
+               <a href="/careers" className="text-sm font-semibold text-white hover:text-[#ff0000] transition">Careers</a>
             </div>
           </div>
-        </section>
 
+        </div>
       </div>
       <Footer />
     </>

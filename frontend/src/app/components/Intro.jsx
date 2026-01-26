@@ -75,7 +75,7 @@ const MonetaLandingPage = () => {
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
           {[
             {
-              icon: "/amazonvan.png",
+              icon: "/amazonvan3.png",
               title: "Free Company Vans",
               desc: "Modern automatic electric Mercedes Sprinter vans, fully maintained.",
             },
@@ -90,17 +90,17 @@ const MonetaLandingPage = () => {
               desc: "Work up to 6 days per week. Midday start, evening finish routes.",
             },
             {
-              icon: "/amazonvan.png",
+              icon: "/path.png",
               title: "Consistent Routes",
               desc: "Year-round work with Amazon in familiar delivery areas.",
             },
             {
-              icon: "/amazonvan.png",
+              icon: "/support.png",
               title: "Full Support",
               desc: "Help with self-employment setup, VAT, and invoicing.",
             },
             {
-              icon: "/amazonvan.png",
+              icon: "/technology.png",
               title: "Modern Technology",
               desc: "Easy-to-use apps for route planning and communication.",
             },
