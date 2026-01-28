@@ -14,7 +14,7 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative z-10 max-w-2xl lg:max-w-4xl py-24">
         <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold leading-tight">
-          drive with fleet X logistics – amazon delivery driver jobs in havant
+           Drive with fleet X logistics amazon Delivery Driver Jobs Portsmouth
         </h1>
 
         <p className="mt-4  text-md lg:text-lg">

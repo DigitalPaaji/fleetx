@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 
 
 export const metadata = {
-  title: 'Fleet X Logistics | Amazon Delivery Driver Jobs in Havant',
-  description: 'Join Fleet X Logistics as an Amazon delivery driver. Free electric vans, weekly pay, flexible hours. Immediate starts available in Havant.',
+  title: 'Delivery Driver Jobs Portsmouth | Fleet X Logistics Hampshire',
+  description: 'Apply for delivery driver jobs in Portsmouth with Fleet X Logistics. Weekly pay, free vans, flexible rotas and full training across Hampshire.',
   keywords: 'Amazon delivery driver jobs Havant, delivery driver Hampshire, DSP jobs, self-employed courier',
   openGraph: {
     title: 'Delivery Driver Jobs in Havant | Fleet X Logistics',
