@@ -51,7 +51,7 @@ At Fleet X Logistics, we understand that most applicants want the same things: s
                 <Image
                 width={440}
                 height={440}
-                  src="/02.webp"
+                  src="/banner5.webp"
                   alt="Fleet X Logistics Dashboard"
                   className="w-full h-auto"
                 />
@@ -423,34 +423,34 @@ At Fleet X Logistics, we understand that most applicants want the same things: s
         Not everyone applying has delivery experience, and that&apos;s fine. We provide full training and support so new drivers can start confidently.
       </p>
       
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 my-12">
         <div className="group p-6 border border-white/10 hover:border-[#ff0000]/40 transition-all duration-300 hover:-translate-y-2">
-          <div className="w-16 h-16 mx-auto mb-4 bg-[#ff0000]/10 rounded-full flex items-center justify-center">
-            <span className="text-2xl font-bold text-[#ff0000]">📱</span>
+          <div className="w-16 h-16 mx-auto mb-4 bg-white/80 rounded-full flex items-center justify-center">
+<Image width={40} height={40} src="/app.png" alt="" />
           </div>
           <h4 className="text-xl font-bold mb-3">Delivery App Training</h4>
           <p className="text-white/80 text-sm">How to use the delivery app properly and efficiently</p>
         </div>
         
         <div className="group p-6 border border-white/10 hover:border-[#ff0000]/40 transition-all duration-300 hover:-translate-y-2">
-          <div className="w-16 h-16 mx-auto mb-4 bg-[#ff0000]/10 rounded-full flex items-center justify-center">
-            <span className="text-2xl font-bold text-[#ff0000]">🚗</span>
+        <div className="w-16 h-16 mx-auto mb-4 bg-white/80 rounded-full flex items-center justify-center">
+<Image width={40} height={40} src="/hands.png" alt="" />
           </div>
           <h4 className="text-xl font-bold mb-3">Safe Driving Practices</h4>
           <p className="text-white/80 text-sm">Best practices for safety and efficiency on route</p>
         </div>
         
         <div className="group p-6 border border-white/10 hover:border-[#ff0000]/40 transition-all duration-300 hover:-translate-y-2">
-          <div className="w-16 h-16 mx-auto mb-4 bg-[#ff0000]/10 rounded-full flex items-center justify-center">
-            <span className="text-2xl font-bold text-[#ff0000]">🗺️</span>
+          <div className="w-16 h-16 mx-auto mb-4 bg-white/80 rounded-full flex items-center justify-center">
+<Image width={40} height={40} src="/route.png" alt="" />
           </div>
           <h4 className="text-xl font-bold mb-3">Route Efficiency</h4>
           <p className="text-white/80 text-sm">How to improve your delivery efficiency over time</p>
         </div>
         
         <div className="group p-6 border border-white/10 hover:border-[#ff0000]/40 transition-all duration-300 hover:-translate-y-2">
-          <div className="w-16 h-16 mx-auto mb-4 bg-[#ff0000]/10 rounded-full flex items-center justify-center">
-            <span className="text-2xl font-bold text-[#ff0000]">👋</span>
+            <div className="w-16 h-16 mx-auto mb-4 bg-white/80 rounded-full flex items-center justify-center">
+<Image width={44} height={44} src="/comunication.png" alt="" />
           </div>
           <h4 className="text-xl font-bold mb-3">Customer Service Basics</h4>
           <p className="text-white/80 text-sm">Professional interaction during deliveries</p>
@@ -480,56 +480,56 @@ At Fleet X Logistics, we understand that most applicants want the same things: s
     {/* Earnings & Payment Section */}
     <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
       <div>
-        <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-6">
+        <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-3">
           Earnings & Payment
           <br />
           <span className="text-[#ff0000]">Kept Clear & Transparent</span>
         </h2>
         
-        <div className="w-24 h-0.5 mb-6 bg-[#ff0000]"></div>
+        <div className="w-24 h-0.5 mb-3 bg-[#ff0000]"></div>
         
-        <p className="text-white/90 text-lg mb-8">
+        <p className="text-white/90 mb-4">
           Drivers want transparency around pay. We keep this simple and clear, without unrealistic claims or hidden surprises.
         </p>
         
-        <div className="space-y-6">
-          <div className="group p-5 border border-white/10 hover:border-[#ff0000]/40 transition-all duration-300 hover:-translate-y-1 bg-gradient-to-r from-black/50 to-transparent">
+        <div className="space-y-4">
+          <div className="group px-4 py-2 border border-white/10 hover:border-[#ff0000]/40 transition-all duration-300 hover:-translate-y-1 bg-gradient-to-r from-black/50 to-transparent">
             <div className="flex items-start">
               <div className="shrink-0 mr-4 mt-1">
-                <div className="w-10 h-10 rounded-full bg-[#ff0000]/20 flex items-center justify-center">
-                  <span className="text-[#ff0000] text-lg font-bold">£</span>
-                </div>
+                  <div className="w-14 h-14 mx-auto mb-4 bg-white/80 rounded-full flex items-center justify-center">
+<Image width={44} height={44} src="/week.png" alt="" />
+          </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-2 text-white">Daily Rates, Weekly Pay</h3>
+                <h3 className="text-lg font-bold text-white">Daily Rates, Weekly Pay</h3>
                 <p className="text-white/80">Competitive daily rates paid directly into your bank account every week. No waiting for monthly payments.</p>
               </div>
             </div>
           </div>
           
-          <div className="group p-5 border border-white/10 hover:border-[#ff0000]/40 transition-all duration-300 hover:-translate-y-1 bg-gradient-to-r from-black/50 to-transparent">
+          <div className="group px-4 py-2 border border-white/10 hover:border-[#ff0000]/40 transition-all duration-300 hover:-translate-y-1 bg-gradient-to-r from-black/50 to-transparent">
             <div className="flex items-start">
               <div className="shrink-0 mr-4 mt-1">
-                <div className="w-10 h-10 rounded-full bg-[#ff0000]/20 flex items-center justify-center">
-                  <span className="text-[#ff0000] text-lg font-bold">%</span>
-                </div>
+                                 <div className="w-14 h-14 mx-auto mb-4 bg-white/80 rounded-full flex items-center justify-center">
+<Image width={40} height={40} src="/vat.png" alt="" />
+          </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-2 text-white">VAT-Registered Drivers</h3>
+                <h3 className="text-lg font-bold text-white">VAT-Registered Drivers</h3>
                 <p className="text-white/80">VAT-registered drivers may earn more. We provide full guidance and support for VAT registration and invoicing.</p>
               </div>
             </div>
           </div>
           
-          <div className="group p-5 border border-white/10 hover:border-[#ff0000]/40 transition-all duration-300 hover:-translate-y-1 bg-gradient-to-r from-black/50 to-transparent">
+          <div className="group px-4 py-2 border border-white/10 hover:border-[#ff0000]/40 transition-all duration-300 hover:-translate-y-1 bg-gradient-to-r from-black/50 to-transparent">
             <div className="flex items-start">
               <div className="shrink-0 mr-4 mt-1">
-                <div className="w-10 h-10 rounded-full bg-[#ff0000]/20 flex items-center justify-center">
-                  <span className="text-[#ff0000] text-lg font-bold">🏆</span>
-                </div>
+                             <div className="w-14 h-14 mx-auto mb-4 bg-white/80 rounded-full flex items-center justify-center">
+<Image width={44} height={44} src="/guarantee.png" alt="" />
+          </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-2 text-white">Performance Incentives</h3>
+                <h3 className="text-lg font-bold text-white">Performance Incentives</h3>
                 <p className="text-white/80">Additional earnings through performance incentives based on reliability, safe driving, and route efficiency.</p>
               </div>
             </div>

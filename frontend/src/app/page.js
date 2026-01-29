@@ -1,18 +1,14 @@
-import React from 'react'
-import Banner from './components/Banner'
-import Intro from './components/Intro'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+'use client';
 
-function page() {
-  return (
-    <div>
-      <Navbar/>
-      <Banner/>
-      <Intro/>
-      <Footer/>
-    </div>
-  )
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+
+export default function HomePage() {
+  const router = useRouter();
+
+  useEffect(() => {
+    router.replace('/delivery-driver-jobs-portsmouth');
+  }, [router]);
+
+  return null; // or a loader if you want
 }
-
-export default page
