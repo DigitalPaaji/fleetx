@@ -82,7 +82,7 @@ At Fleet X Logistics, we understand that most applicants want the same things: s
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
           {[
             {
-              icon: "/amazonvan3.png",
+              icon: "/amazonvan.png",
               title: "Free Company Vans",
               desc: " Free company van provided (no rental fees / no lease costs) Modern automatic electric Mercedes Sprinter vans, fully maintained.",
             },

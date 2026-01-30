@@ -123,7 +123,7 @@ const CareersPage = () => {
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-4 group">
                   <div className="shrink-0 w-12 h-12 bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-[#ff0000]/40 transition">
-                    <Image alt="" width={12} height={12} src="/amazonvan3.png" className="w-full h-auto object-cover p-2" />
+                    <Image alt="" width={12} height={12} src="/amazonvan.png" className="w-full h-auto object-cover p-2" />
                   </div>
                   <div>
                     <h4 className="font-bold text-lg mb-1">{item.title}</h4>
