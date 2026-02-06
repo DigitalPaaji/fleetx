@@ -32,7 +32,7 @@ export default function DriverPopup() {
     <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/80 px-4">
       <div
         ref={popupRef}
-        className="relative w-full max-w-xl overflow-hidden  border border-white/10 bg-black text-white shadow-2xl animate-fadeIn scale-[0.98]"
+        className="relative w-full max-w-xl overflow-hidden  border border-white/10 bg-[#da3526] text-white shadow-2xl animate-fadeIn scale-[0.98]"
       >
         {/* Background image */}
         <div className="absolute inset-0 -z-10">

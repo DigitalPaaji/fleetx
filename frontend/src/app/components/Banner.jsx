@@ -20,7 +20,7 @@ export default function HeroSection() {
         <p className="mt-4  text-md lg:text-lg">
           Free company vans. Clear weekly pay. Consistent work.
    
-          Join a professional Amazon Delivery Service Partner in Hampshire.
+          Join a professional Amazon Delivery Service Partner in Portsmouth.
         </p>
 
 
