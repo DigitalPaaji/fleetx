@@ -117,7 +117,7 @@ At Fleet X Logistics, we understand that most applicants want the same things: s
               className="group relative bg-black border border-white/10 p-8 hover:border-[#ff0000]/40 transition-all duration-300 hover:-translate-y-1"
             >
               <Image width={440} height={440} className="w-14 h-14 p-2 bg-white/5 border border-white/10 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform"
-                src={feature.icon} alt=""
+                src={feature.icon} alt="img"
               />
               <h4 className="text-xl font-bold mb-4 text-white">
                 {feature.title}
@@ -426,7 +426,7 @@ At Fleet X Logistics, we understand that most applicants want the same things: s
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 my-12">
         <div className="group p-6 border border-white/10 hover:border-[#ff0000]/40 transition-all duration-300 hover:-translate-y-2">
           <div className="w-16 h-16 mx-auto mb-4 bg-white/80 rounded-full flex items-center justify-center">
-<Image width={40} height={40} src="/app.png" alt="" />
+<Image width={40} height={40} src="/app.png" alt="img" />
           </div>
           <h4 className="text-xl font-bold mb-3">Delivery App Training</h4>
           <p className="text-white/80 text-sm">How to use the delivery app properly and efficiently</p>
@@ -434,7 +434,7 @@ At Fleet X Logistics, we understand that most applicants want the same things: s
         
         <div className="group p-6 border border-white/10 hover:border-[#ff0000]/40 transition-all duration-300 hover:-translate-y-2">
         <div className="w-16 h-16 mx-auto mb-4 bg-white/80 rounded-full flex items-center justify-center">
-<Image width={40} height={40} src="/hands.png" alt="" />
+<Image width={40} height={40} src="/hands.png" alt="img" />
           </div>
           <h4 className="text-xl font-bold mb-3">Safe Driving Practices</h4>
           <p className="text-white/80 text-sm">Best practices for safety and efficiency on route</p>
@@ -442,7 +442,7 @@ At Fleet X Logistics, we understand that most applicants want the same things: s
         
         <div className="group p-6 border border-white/10 hover:border-[#ff0000]/40 transition-all duration-300 hover:-translate-y-2">
           <div className="w-16 h-16 mx-auto mb-4 bg-white/80 rounded-full flex items-center justify-center">
-<Image width={40} height={40} src="/route.png" alt="" />
+<Image width={40} height={40} src="/route.png" alt="img" />
           </div>
           <h4 className="text-xl font-bold mb-3">Route Efficiency</h4>
           <p className="text-white/80 text-sm">How to improve your delivery efficiency over time</p>
@@ -450,7 +450,7 @@ At Fleet X Logistics, we understand that most applicants want the same things: s
         
         <div className="group p-6 border border-white/10 hover:border-[#ff0000]/40 transition-all duration-300 hover:-translate-y-2">
             <div className="w-16 h-16 mx-auto mb-4 bg-white/80 rounded-full flex items-center justify-center">
-<Image width={44} height={44} src="/comunication.png" alt="" />
+<Image width={44} height={44} src="/comunication.png" alt="img" />
           </div>
           <h4 className="text-xl font-bold mb-3">Customer Service Basics</h4>
           <p className="text-white/80 text-sm">Professional interaction during deliveries</p>
@@ -497,7 +497,7 @@ At Fleet X Logistics, we understand that most applicants want the same things: s
             <div className="flex items-start">
               <div className="shrink-0 mr-4 mt-1">
                   <div className="w-14 h-14 mx-auto mb-4 bg-white/80 rounded-full flex items-center justify-center">
-<Image width={44} height={44} src="/week.png" alt="" />
+<Image width={44} height={44} src="/week.png" alt="img" />
           </div>
               </div>
               <div>
@@ -511,7 +511,7 @@ At Fleet X Logistics, we understand that most applicants want the same things: s
             <div className="flex items-start">
               <div className="shrink-0 mr-4 mt-1">
                                  <div className="w-14 h-14 mx-auto mb-4 bg-white/80 rounded-full flex items-center justify-center">
-<Image width={40} height={40} src="/vat.png" alt="" />
+<Image width={40} height={40} src="/vat.png" alt="img" />
           </div>
               </div>
               <div>
@@ -525,7 +525,7 @@ At Fleet X Logistics, we understand that most applicants want the same things: s
             <div className="flex items-start">
               <div className="shrink-0 mr-4 mt-1">
                              <div className="w-14 h-14 mx-auto mb-4 bg-white/80 rounded-full flex items-center justify-center">
-<Image width={44} height={44} src="/guarantee.png" alt="" />
+<Image width={44} height={44} src="/guarantee.png" alt="img" />
           </div>
               </div>
               <div>
