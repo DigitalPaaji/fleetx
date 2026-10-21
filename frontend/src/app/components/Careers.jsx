@@ -458,10 +458,10 @@ const CareersPage = () => {
                 <Phone className="w-12 h-12 text-[#ff0000] mx-auto mb-4" />
                 <h4 className="text-lg font-bold mb-2">Call / WhatsApp</h4>
                 <a 
-                  href="tel:07763618300" 
+                  href="tel:07454954265" 
                   className="text-xl font-bold hover:text-[#ff0000] transition"
                 >
-                  07763 618300
+                  07454954265
                 </a>
                 <p className="text-white/70 mt-2">Available Mon-Sat, 8am-6pm</p>
               </div>

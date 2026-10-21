@@ -91,7 +91,7 @@ const ApplicationThankYouPage = () => {
             
             <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
               <a
-                href="tel:07763618300"
+                href="tel:07454954265"
                 className="bg-white/5 border border-white/10 p-6 hover:border-[#ff0000]/40 transition group"
               >
                 <div className="flex items-center gap-4">
@@ -100,7 +100,7 @@ const ApplicationThankYouPage = () => {
                   </div>
                   <div>
                     <h3 className="font-bold mb-1">Call Us Directly</h3>
-                    <p className="text-white/70">07763 618300</p>
+                    <p className="text-white/70">07454954265</p>
                   </div>
                 </div>
               </a>

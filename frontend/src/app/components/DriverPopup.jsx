@@ -100,7 +100,7 @@ export default function DriverPopup() {
             href="/apply"
             className="group mt-6 flex items-center justify-center gap-2 w-full rounded-xl bg-white text-black py-3 font-semibold transition hover:bg-gray-200"
           >
-            Apply Now – Takes 60 Seconds
+            Apply Now - Takes 60 Seconds
             <FaArrowRight className="transition group-hover:translate-x-1" />
           </a>
 

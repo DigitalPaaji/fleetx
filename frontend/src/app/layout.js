@@ -105,12 +105,10 @@ export default function RootLayout({ children }) {
 </Script>
         
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
           <DriverPopup />
           <CookieConsentBanner/>
-        {children}
+          {children}
       </body>
     </html>
   );

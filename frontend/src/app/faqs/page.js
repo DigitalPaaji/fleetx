@@ -226,11 +226,11 @@ const FAQPage = () => {
                   </p>
                   <div className="space-x-6 space-y-3  w-full xl:w-[70%]">
                     <a 
-                      href="tel:07763618300" 
+                      href="tel:07454954265" 
                       className="inline-flex items-center gap-3 text-white hover:text-[#ff0000] transition"
                     >
                       <Phone className="w-5 h-5" />
-                      <span className="font-medium">07763 618300</span>
+                      <span className="font-medium">07454954265</span>
                     </a>
                     <a 
                       href="mailto:recruitment@fleetxlogistics.co.uk" 
@@ -322,7 +322,7 @@ const FAQPage = () => {
                 <MessageCircle className="w-5 h-5" />
                 <div className="text-left">
                   <div className="text-sm">Chat on WhatsApp</div>
-                  <div className="font-bold">07763 618300</div>
+                  <div className="font-bold">07454954265</div>
                 </div>
               </a>
               
@@ -367,8 +367,8 @@ const FAQPage = () => {
                   View All Driver Jobs
                 </a>
                 <span className="text-white/30">•</span>
-                <a href="tel:07763618300" className="text-white/70 hover:text-[#ff0000] transition">
-                  Call: 07763 618300
+                <a href="tel:07454954265" className="text-white/70 hover:text-[#ff0000] transition">
+                  Call: 07454954265
                 </a>
               </div>
             </div>

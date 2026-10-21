@@ -293,7 +293,7 @@ const ContactPage = () => {
                             href="https://wa.me/447763618300"
                             className="hover:text-[#ff0000] transition"
                           >
-                            07763 618300
+                            07454954265
                           </a>
                         </div>
                       </div>
@@ -332,10 +332,10 @@ const ContactPage = () => {
                       <div>
                         <div className="font-medium">Phone:</div>
                         <a
-                          href="tel:07763618300"
+                          href="tel:07454954265"
                           className="hover:text-[#ff0000] transition"
                         >
-                          07763 618300
+                          07454954265
                         </a>
                       </div>
                     </div>

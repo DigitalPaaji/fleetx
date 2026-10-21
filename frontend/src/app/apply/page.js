@@ -459,7 +459,7 @@ const ApplicationLandingPage = () => {
                 className="flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-4 transition"
               >
                 <Phone className="w-4 h-4" />
-                <span>Quick Apply via WhatsApp: 07763 618300</span>
+                <span>Quick Apply via WhatsApp: 07454954265</span>
               </a>
             </div>
 
@@ -524,10 +524,10 @@ const ApplicationLandingPage = () => {
                   <span>Prefer to speak to someone?</span>
                 </div>
                 <a 
-                  href="tel:07763618300" 
+                  href="tel:07454954265" 
                   className="inline-block bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold py-2 px-6 transition"
                 >
-                  Call: 07763 618300
+                  Call: 07454954265
                 </a>
               </div>
             </div>
